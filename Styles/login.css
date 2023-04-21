@@ -135,6 +135,73 @@ form button {
 
 /* designing for media responsivenes */
 
+@media (max-width:920px) {
+    nav ul {
+        padding: 0 5rem;
+    }
+    
+}
+
+@media (max-width:810px) {
+    /* nav bar section  */
+    nav {
+        height: fit-content;
+        background-color: var(--white);
+    }
+
+    nav ul {
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    .nav-items {
+       display: none;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+    
+    .active.mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        display: inline;
+        margin-right: 85%;
+    }
+
+    .nav-icon img {
+        width: 1.125rem;
+        height: 0.75rem;
+        cursor: pointer;
+    }
+
+    .profile-icon, .search-icon {
+        margin-right: 1rem;
+    }
+
+
+    li img {
+        width: 0.938rem;
+        height: 1.125rem;
+        filter: invert(100%);
+    }
+
+    h2 {
+        margin-top: 9rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width:570px) {
+    .input {
+        width: 25rem;
+    } 
+}
+
 /* mobile  */
 @media (max-width:500px) {
     /* nav bar section  */
