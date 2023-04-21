@@ -100,15 +100,15 @@ li img {
 }
 
 .slide-2 {
-    background-image: url("../Assets/Images/Img-2.png");
+    background-image: url("../Assets/Images/img-2.png");
 }
 
 .slide-3 {
-    background-image: url("../Assets/Images/Img-3.png");
+    background-image: url("../Assets/Images/img-3.png");
 }
 
 .slide-4 {
-    background-image: url("../Assets/Images/Img-4.png");
+    background-image: url("../Assets/Images/img-4.png");
 }
 
 .btn {
@@ -317,5 +317,5 @@ li img {
     /* end of styling for the collecion section  */
 
     /* styling for review section  */
-    
+
 }
