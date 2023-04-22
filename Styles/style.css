@@ -330,11 +330,11 @@ li img {
 
     .review-carousel {
         display: flex;
-        gap: 1rem;
+        transition: transform .4s ease-in-out;
     }
 
     .review-carousel .testimony-1 {
-        width: 10.875rem;
+        width: 18.4rem; /*10.875*/
         background-color: #393939;
         border-radius: 0.5rem;
         padding: 1rem;

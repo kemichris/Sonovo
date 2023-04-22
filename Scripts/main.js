@@ -36,7 +36,6 @@ function updateSlide(){
 }
 
 // script for the review section 
-Slideroll()
 
 const reviewSlide = document.querySelector(".review-carousel");
 const testimonies = document.querySelectorAll(".testimony-1");
@@ -50,7 +49,7 @@ function Slideroll(){
     }else if (slide < 1) {
         slide = testimonies.length;
     }
-    reviewSlide.style.transform = `translateX(-${(slide -1) * 10.875}rem)`
+    reviewSlide.style.transform = `translateX(-${(slide -1) * 20.4}rem)`
 
     timeout = setTimeout(() => {
         slide++;
@@ -58,3 +57,5 @@ function Slideroll(){
     }, 3000);
 
 }
+
+Slideroll();
