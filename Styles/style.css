@@ -139,9 +139,6 @@ li img {
 
 
 
-
-
-
 @media (max-width:810px) {
     /* nav bar section  */
     nav {
@@ -317,5 +314,174 @@ li img {
     /* end of styling for the collecion section  */
 
     /* styling for review section  */
+
+    .review-container {
+        margin: 0 1.5rem;
+        overflow: hidden;
+    }
+
+    .review-container h2 {
+        text-align: center;
+        color: #333333;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .review-carousel {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .review-carousel .testimony-1 {
+        width: 10.875rem;
+        background-color: #393939;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        flex-shrink: 0;
+    }
+
+    .img-name {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-name img {
+        margin-right: 0.5rem;
+    }
+
+    .img-name p {
+        font-size: 0.875rem;
+        font-family: 'DM Sans', sans-serif;
+        color: #F9F6F5;
+        font-weight: 500;
+    }
+
+    .tesimony-text {
+        font-size: 0.75rem;
+        color: #F9F6F5;
+        font-family: 'DM Sans', sans-serif;
+    }
+    /* end of styling for review section  */
+
+    /* styling for the services  */
+
+    .services-container {
+        background-color: #EAEAEAE5;
+        margin-top: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .services-container .head-p {
+        font-size: 1rem;
+        color: #4D4B4B;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service p {
+        color: #333333B2;
+        font-size: 0.875rem;
+        font-family: 'DM Sans', sans-serif;
+    }
+    /* end of styling for services  */
+
+    /* footer section  */
+    
+    footer {
+        background-color: #333333;
+        margin-top: -1.2rem;
+        padding: 1.5rem 0 2.8rem 0;
+    }
+
+    .news-letter {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #888888CC;
+        padding: 0 2rem;
+    }
+
+    .news-letter h3, .links h3 {
+        font-size: 1rem;
+        font-family: 'DM Sans', sans-serif;
+        color: #FFFAFD;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .news-letter p {
+        color: #FFFAFDCC;
+        font-size: 1rem;
+        font-family: 'DM Sans', sans-serif;
+        margin: 0;
+    }
+
+    .news-letter input {
+        height: 1.5rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #FAF6F6B2;
+        background-color: transparent;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        color: #FFFAFDCC;
+    }
+
+    .news-letter input:focus {
+        outline: none !important;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #FAF6F6B2;
+    }
+
+    .news-letter button {
+        padding: 0.5rem;
+        width: fit-content;
+        font-size: 0.875rem;
+        color: #646537;
+        font-family: 'DM Sans', sans-serif;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: #FFFFFFDE;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #888888CC;
+        padding: 1rem 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .links a {
+        font-size: 0.875rem;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        color: #EAEAE7E5;
+        margin-top: 1rem;
+        text-decoration: none;
+    }
+
+    .ig-icon {
+        margin: 0 1rem 0 2rem;
+    }
 
 }

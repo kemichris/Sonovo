@@ -1,4 +1,4 @@
-// variables for the carousel section 
+// script for the top container carousel section 
 const nextEl = document.querySelector(".next");
 const prevEl = document.querySelector(".prev");
 const slideContainerEl = document.querySelector(".slider");
@@ -31,6 +31,30 @@ function updateSlide(){
     timeout = setTimeout(() => {
         currentSlide++;
         updateSlide();
+    }, 3000);
+
+}
+
+// script for the review section 
+Slideroll()
+
+const reviewSlide = document.querySelector(".review-carousel");
+const testimonies = document.querySelectorAll(".testimony-1");
+
+let slide = 1;
+// let time;
+
+function Slideroll(){
+    if (slide > testimonies.length) {
+        slide = 1
+    }else if (slide < 1) {
+        slide = testimonies.length;
+    }
+    reviewSlide.style.transform = `translateX(-${(slide -1) * 10.875}rem)`
+
+    timeout = setTimeout(() => {
+        slide++;
+        Slideroll();
     }, 3000);
 
 }
