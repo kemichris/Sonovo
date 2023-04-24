@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Item</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/select.css">
+</head>
+<body>
+    <!-- nav bar section -->
+    <header>
+        <nav>
+            <img class="mobile-logo active" src="Assets/Images/logo-mobile.png" alt="">
+           <ul>
+            <li class="nav-icon">
+                <img src="Assets/Icons/nav-icon.png" alt="">
+            </li>
+            <li>
+                <img class="search-icon" src="Assets/Icons/search-icon.png" alt="">
+            </li>
+            <div class="nav-items">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="">Categories</a>
+                </li>
+                <li>
+                    <a href="">The Brand</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </div>
+            <div class="profile-cart">
+                <li>
+                    <a class="profile-icon" href=""><img src="Assets/Icons/profile.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="Assets/Icons/cart.png" alt=""></a>
+                </li>
+            </div>
+           </ul> 
+        </nav>
+    </header>
+    <main>
+        <!-- selected item section  -->
+        <div class="selected-item">
+            <img src="Assets/Images/img-5.png" alt="">
+            <p>SONOVO SUD96 CORD FIT</p>
+            <SMall>#17,000</SMall>
+        </div>
+
+        <!-- item specification section  -->
+        <div class="item-spectification">
+            <div class="buttons-for-sizes">
+                <h4>UK Size</h4>
+                <div class="buttons">
+                    <button>4</button>
+                    <button>6</button>
+                    <button>8</button>
+                    <button>10</button>
+                    <button>12</button>
+                    <button>14</button>
+                    <button>16</button>
+                    <button>18</button>
+                </div>
+                
+            </div>
+
+            <div class="colors">
+                <h4>Color</h4>
+                <div class="buttons-color">
+                    <button class="black"><i class="fa-solid fa-check"></i></button>
+                    <button class="green"><i class="fa-solid fa-check"></i></button>
+                    <button class="orange"><i class="fa-solid fa-check"></i></button>
+                    <button class="blue"><i class="fa-solid fa-check"></i></button>
+                    <button class="grey"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="quatity-section">
+                <label for="quantity">Quantity</label>
+                <select name="Quantity" id="quantity">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                </select>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </div>
+
+        <!-- review section  -->
+        <div class="review-section">
+            <form action="">
+                <h3>Add Review</h3>
+                <p class="leave-review">Leave a review on this product</p>
+                <p class="your-review">Your review</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <p class="your-name">Your Name</p>
+                <input type="text" name="" id="">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="other-customers-review">
+            <h2>Other Customer Reviews</h2>
+            <div class="testimony-1">
+                <div class="img-name">
+                    <img src="Assets/Images/review-img.png" alt="">
+                    <p>Amanda Chris</p>
+                </div>
+                <p class="tesimony-text">I got this lovely two piece amd the outfit is giving hot hot, like it blew my expectation.</p>
+                <div class="rating">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/star.png" alt="">
+                    <p>4/5</p>
+                </div>
+            </div>
+            <div class="testimony-1">
+                <div class="img-name">
+                    <img src="Assets/Images/review-img.png" alt="">
+                    <p>Amanda Chris</p>
+                </div>
+                <p class="tesimony-text">I got this lovely two piece amd the outfit is giving hot hot, like it blew my expectation.</p>
+                <div class="rating">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/color-star.png" alt="">
+                    <img src="Assets/Icons/star.png" alt="">
+                    <p>4/5</p>
+                </div>
+            </div>
+        </div>
+            
+
+        <!-- section for other products  -->
+        <div class="products">
+            <h2>Other Products</h2>
+            <div class="container-grid">
+                <div class="collection-item">
+                    <img src="Assets/Images/img-7.png" alt="">
+                    <p>SONOVO SC28 Pant</p>
+                    <small>Price: <strong>#12,000</strong></small> 
+                </div>
+                <div class="collection-item">
+                    <img src="Assets/Images/img-8.png" alt="">
+                    <p>SONOVO MSC03 Black pant</p>
+                    <small>Price: <strong>#10,000</strong></small> 
+                </div>
+                <div class="collection-item">
+                    <img src="Assets/Images/img-9.png" alt="">
+                    <p>SONOVO J001 Jacket and VB Combat</p>
+                    <small>Price: <strong>#19,000</strong></small> 
+                </div>
+                <div class="collection-item">
+                    <img src="Assets/Images/img-10.png" alt="">
+                    <p>SONOVO SUD98 set</p>
+                    <small>Price: <strong>#16,000</strong></small> 
+                </div>
+            </div>
+            <a class="see-more" href="">See More ></a>    
+        </div>
+    </main>
+
+    <!-- footer section  -->
+    <footer>
+        <div class="news-letter">
+            <h3>Don't miss out on our exclusive updates.</h3>
+            <p>Email Address</p>
+            <input type="email" name="" id="">
+            <button>Sign Up</button>
+        </div>
+        <div class="links">
+            <h3>Quick Links</h3>
+            <a href="">My Account</a>
+            <a href="">Shipping Policy</a>
+            <a href="">Return Policy</a>
+            <a href="">Terms of Service</a>
+        </div>
+        <a class="ig-icon" href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/instagram-icon.png" alt=""></a>
+        <a href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/facebook-icon.png" alt=""></a>
+    </footer>
+    
+</body>
+</html>
