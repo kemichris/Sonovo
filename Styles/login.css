@@ -147,6 +147,7 @@ form button {
     nav {
         height: fit-content;
         background-color: var(--white);
+        padding-bottom: 0.5rem;
     }
 
     nav ul {
@@ -249,6 +250,110 @@ form button {
         height: 1.125rem;
         filter: invert(100%);
     }
+
+    /* search bar section  */
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 0 1.5rem;
+    }
+
+    .search-field {
+        width: 17.438rem;
+        padding: 0.5rem 1rem 0.5rem 3rem;
+        background-color: #E0E0E0E5;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 0.875rem;
+        outline: none ;
+        margin-left: -2.5rem;
+    }
+
+
+    .search-icon-btn, .close-search {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .close-search {
+        margin-left: 1.594rem;
+    }
+
+    .search-icon-btn img {
+        width: 1.093rem;
+        height: 1.093rem;
+        object-fit: cover;
+        filter: invert(100%);
+    }
+
+    .search-bar.active {
+        display: none;
+    }
+
+    /* styling for mobile menu drop down  */
+
+    .mobile-menu {
+        padding: 2.5rem 0;
+        background-color: #646537;
+        height: fit-content;
+    }
+
+     .mobile-menu .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem; 
+    }
+
+    .anchor-divs, .category-drop-down {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #FFF8FC4D;
+    }
+
+    .anchor-divs a, .text-icon p {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+
+    .text-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-icon p {
+        margin: 0;
+    }
+
+    .mobile-menu .search-bar .search-field {
+        background-color: #FDF9FB;
+    }
+
+    .mobile-menu .close-search img {
+        filter: invert(100%);
+    }
+
+    .social-icons {
+        padding-left: 1.5rem;
+    }
+
+    .social-icons img {
+        margin-top: 1.313rem;
+        margin-right: 0.963rem;
+    }
+
+    .mobile-menu.active {
+        display: none;
+    }
+
+    .nav-ul.active {
+        display: none;
+    }
+    /* end of styling for navbar  */
 
     /* form section  */
     
