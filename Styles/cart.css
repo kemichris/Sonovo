@@ -255,9 +255,16 @@ h1 {
         filter: invert(100%);
     }
 
+    .mobile-menu .social-icons {
+        padding-left: 1.5rem;
+    }
+
     .social-icons img {
         margin-top: 1.313rem;
+    }
 
+    .mobile-menu .social-icons .ig-icon {
+        margin-left: 0;
     }
 
     .mobile-menu.active {
