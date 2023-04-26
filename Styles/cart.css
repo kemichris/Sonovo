@@ -267,11 +267,22 @@ h1 {
         margin-left: 0;
     }
 
-    .mobile-menu.active {
-        display: none;
+    .drop-down-items {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        gap: 1rem;
     }
 
-    .nav-ul.active {
+    .drop-down-items a {
+        font-size: 1.25rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: #FFF8FC;
+        text-decoration: none;
+    }
+
+    .mobile-menu.active, .nav-ul.active, .drop-down-items.active, .collapse-icon.active, .drop-down-icon.active {
         display: none;
     }
     /* end of styling for nav bar  */

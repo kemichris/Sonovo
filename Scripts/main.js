@@ -6,6 +6,9 @@ const closeSearchBar = document.getElementById("close-search-bar");
 const openSearchBar = document.getElementById("open-search-bar");
 const searchBar = document.querySelector(".search-bar");
 const mobileMenu = document.querySelector(".mobile-menu");
+const categoryDropdown = document.querySelector(".drop-down-icon");
+const categoryCollapse = document.querySelector(".collapse-icon");
+const dropDownItems = document.querySelector(".drop-down-items");
 
 // opening the search bar 
 openSearchBar.addEventListener("click", ()=> {
@@ -29,6 +32,20 @@ menuIcon.addEventListener("click", ()=> {
 closeMobileMenu.addEventListener("click", ()=> {
     mobileMenu.classList.add("active");
     navMenuItems.classList.remove("active");
+});
+
+// opening the category dropdown 
+categoryDropdown.addEventListener("click", ()=> {
+    categoryDropdown.classList.add("active");
+    categoryCollapse.classList.remove("active");
+    dropDownItems.classList.remove("active");
+});
+
+// closing the category dropdown 
+categoryCollapse.addEventListener("click", ()=> {
+    categoryCollapse.classList.add("active");
+    categoryDropdown.classList.remove("active");
+    dropDownItems.classList.add("active");
 });
 
 
