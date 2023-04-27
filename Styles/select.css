@@ -346,6 +346,11 @@ li img {
         padding: 0.25rem 0.5rem;
     }
 
+    .buttons button.active {
+        background-color: #646537;
+        color: #D9D9D9E5;
+    }
+
     .colors {
         margin-bottom: 1rem;
     }
@@ -379,6 +384,15 @@ li img {
         width: 1.5rem;
         border-radius: 100%;
         border: none;
+        padding: 0.25rem;
+    }
+
+    .buttons-color button i {
+        color: white;
+    }
+
+    .buttons-color button i.active {
+        display: none;
     }
 
     .quatity-section {
@@ -400,7 +414,8 @@ li img {
 
     .quatity-section select {
         border: none;
-        
+        outline: none;
+        cursor: pointer;
     }
 
     .add-to-cart, .buy-now {

@@ -62,3 +62,139 @@ let itemPrice = JSON.parse(localStorage.getItem("itemPrice"));
 displayImage.src = newImgSrc;
 displayName.innerHTML = itemName;
 displayPrice.innerHTML = itemPrice;
+
+// script for the size button 
+
+const btnsForSizes = document.querySelectorAll(".btn-sizes");
+const btnColors = document.querySelectorAll(".btn-color");
+const colorSelect = document.querySelectorAll(".color-select");
+
+// select size 
+btnsForSizes[0].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.add("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.remove("active")
+});
+btnsForSizes[1].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.add("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.remove("active")
+});
+btnsForSizes[2].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.add("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.remove("active")
+});
+btnsForSizes[3].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.add("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.remove("active")
+});
+
+btnsForSizes[4].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.add("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.remove("active")
+});
+btnsForSizes[5].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.add("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.remove("active")
+});
+btnsForSizes[6].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.add("active")
+    btnsForSizes[7].classList.remove("active")
+});
+btnsForSizes[7].addEventListener("click", ()=>{
+    btnsForSizes[0].classList.remove("active")
+    btnsForSizes[1].classList.remove("active")
+    btnsForSizes[2].classList.remove("active")
+    btnsForSizes[3].classList.remove("active")
+    btnsForSizes[4].classList.remove("active")
+    btnsForSizes[5].classList.remove("active")
+    btnsForSizes[6].classList.remove("active")
+    btnsForSizes[7].classList.add("active")
+});
+
+// select color 
+btnColors[0].addEventListener("click", ()=>{
+    colorSelect[0].classList.remove("active");
+    colorSelect[1].classList.add("active");
+    colorSelect[2].classList.add("active");
+    colorSelect[3].classList.add("active");
+    colorSelect[4].classList.add("active");
+});
+btnColors[1].addEventListener("click", ()=>{
+    colorSelect[0].classList.add("active");
+    colorSelect[1].classList.remove("active");
+    colorSelect[2].classList.add("active");
+    colorSelect[3].classList.add("active");
+    colorSelect[4].classList.add("active");
+});
+btnColors[2].addEventListener("click", ()=>{
+    colorSelect[0].classList.add("active");
+    colorSelect[1].classList.add("active");
+    colorSelect[2].classList.remove("active");
+    colorSelect[3].classList.add("active");
+    colorSelect[4].classList.add("active");
+});
+btnColors[3].addEventListener("click", ()=>{
+    colorSelect[0].classList.add("active");
+    colorSelect[1].classList.add("active");
+    colorSelect[2].classList.add("active");
+    colorSelect[3].classList.remove("active");
+    colorSelect[4].classList.add("active");
+});
+btnColors[4].addEventListener("click", ()=>{
+    colorSelect[0].classList.add("active");
+    colorSelect[1].classList.add("active");
+    colorSelect[2].classList.add("active");
+    colorSelect[3].classList.add("active");
+    colorSelect[4].classList.remove("active");
+});
+
+
+
+
+
+// btnsForSizes.forEach((btnForSize) =>{
+//     btnForSize.addEventListener("click", ()=> {
+//         btnForSize.classList.add("active")
+//     })
+// })
