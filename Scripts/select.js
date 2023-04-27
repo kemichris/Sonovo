@@ -47,3 +47,18 @@ categoryCollapse.addEventListener("click", ()=> {
     categoryDropdown.classList.remove("active");
     dropDownItems.classList.add("active");
 });
+
+
+// script for selected item 
+
+const displayImage = document.getElementById("item-image");
+const displayName = document.getElementById("item-name");
+const displayPrice= document.getElementById("item-price")
+
+let newImgSrc = JSON.parse(localStorage.getItem("imageSrc"));
+let itemName = JSON.parse(localStorage.getItem("itemName"));
+let itemPrice = JSON.parse(localStorage.getItem("itemPrice"));
+
+displayImage.src = newImgSrc;
+displayName.innerHTML = itemName;
+displayPrice.innerHTML = itemPrice;

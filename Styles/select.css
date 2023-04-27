@@ -290,6 +290,10 @@ li img {
         margin: 0 1.5rem;
     }
 
+    .selected-item img {
+        width: 100%;
+    }
+
     .selected-item p, .selected-item small {
         font-family: 'DM Sans', sans-serif;
         text-align: center;
@@ -307,6 +311,12 @@ li img {
         font-size: 1rem;
         display: block;
     }
+
+    .naira {
+        text-decoration-style: double;
+    }
+
+
     /* end of styling for selected item  */
 
     /* styling for the item specification  */

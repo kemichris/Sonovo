@@ -112,4 +112,65 @@ function Slideroll(){
 
 Slideroll();
 
+// script for the items
+const itemsImages = document.querySelectorAll(".items-images")
+// const sud96Img = document.getElementById("sud96");
+// const sc30Img = document.getElementById("sc30")
+// const sc
+
+let imgSrc = "";
+let nameOfItem = "";
+let priceOfItem = 0;
+
+
+itemsImages[0].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[0], "SONOVO SUD96 CORD FIT", 17000)
+});
+itemsImages[1].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[1], "SONOVO SC30 Combat baggy pants", 10000)
+});
+itemsImages[2].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[2], "SONOVO SC28 Pant", 12000)
+});
+itemsImages[3].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[3], "SONOVO MSC03 Black pant", 10000)
+});
+itemsImages[4].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[4], "SONOVO J001 Jacket and VB Combat", 19000)
+});
+itemsImages[5].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[5], "SONOVO SUD98 set", 16000)
+});
+itemsImages[6].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[6], "SONOVO SUD14 set", 16000)
+});
+itemsImages[7].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[7], "SONOVO SC34 Cargo pant", 12000)
+});
+itemsImages[8].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[8], "SONOVO oversized Green Combat", 10000)
+});
+itemsImages[9].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[9], "SONOVO SC02 Pant", 10000)
+});
+
+
+
+// fuction to send item to the select page 
+
+function sendToSelect(itemImg, itemName, itemPrice) {
+    imgSrc = itemImg.src;
+    nameOfItem = itemName;
+    priceOfItem = itemPrice;
+    updateLocalStorage();
+}
+
+// function to set items to localStorage 
+
+function updateLocalStorage() {
+    localStorage.setItem("imageSrc", JSON.stringify(imgSrc));
+    localStorage.setItem("itemName", JSON.stringify(nameOfItem));
+    localStorage.setItem("itemPrice", JSON.stringify(priceOfItem));
+}
+
 
