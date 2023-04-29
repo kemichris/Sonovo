@@ -47,3 +47,72 @@ categoryCollapse.addEventListener("click", ()=> {
     categoryDropdown.classList.remove("active");
     dropDownItems.classList.add("active");
 });
+
+
+// create cart items 
+// const cartContainer = document.querySelector(".orders");
+
+// let newImgSrc = JSON.parse(localStorage.getItem("imageSrc"));
+// let itemName = JSON.parse(localStorage.getItem("itemName"));
+// let itemPrice = JSON.parse(localStorage.getItem("itemPrice"));
+
+// if (itemName === ) {
+    
+// } else {
+    
+// }
+
+// function creatCartItem() {
+//     const orderContainer = document.createElement("div");
+//     orderContainer.classList.add("order-container");
+//     cartContainer.appendChild(orderContainer);
+
+//     const cartItemImg = document.createElement("img");
+//     cartItemImg.src = newImgSrc;
+//     cartItemImg.classList.add("item-image");
+//     orderContainer.appendChild(cartItemImg);
+
+//     const orderDetails = document.createElement("div");
+//     orderDetails.classList.add("order-details");
+//     orderContainer.appendChild(orderDetails);
+
+//     const productName = document.createElement("p")
+//     productName.innerHTML = itemName;
+//     orderDetails.appendChild(productName);
+
+//     const smallEl = document.createElement("small");
+//     const smallText = document.createTextNode("Price set: #");
+//     const smallSpan = document.createElement("span");
+//     const priceValueText = document.createTextNode(itemPrice);
+//     smallSpan.textContent = priceValueText.textContent;
+//     smallEl.appendChild(smallText);
+//     smallEl.appendChild(smallSpan);
+//     orderDetails.appendChild(smallEl);
+
+//     const removeAndQty = document.createElement("div");
+//     removeAndQty.classList.add("remove-and-qty");
+//     orderDetails.appendChild(removeAndQty);
+
+//     const delIcon = document.createElement("img")
+//     delIcon.src = "Assets/Icons/delete.png";
+//     removeAndQty.appendChild(delIcon);
+    
+//     const removeP = document.createElement("p");
+//     removeP.innerHTML = "REMOVE";
+//     removeAndQty.appendChild(removeP);
+
+//     const reduceBtn = document.createElement("button");
+//     reduceBtn.classList.add("reduce-btn");
+//     reduceBtn.innerHTML = "-";
+//     removeAndQty.appendChild(reduceBtn);
+
+//     const qtyDisplay = document.createElement("input");
+//     qtyDisplay.setAttribute("type","text");
+//     qtyDisplay.setAttribute("readonly", true);
+//     removeAndQty.appendChild(qtyDisplay);
+
+//     const increaseBtn = document.createElement("button");
+//     reduceBtn.classList.add("increase-btn");
+//     reduceBtn.innerHTML = "+";
+//     removeAndQty.appendChild(increaseBtn);   
+// }

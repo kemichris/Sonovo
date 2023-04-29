@@ -53,7 +53,7 @@ categoryCollapse.addEventListener("click", ()=> {
 
 const displayImage = document.getElementById("item-image");
 const displayName = document.getElementById("item-name");
-const displayPrice= document.getElementById("item-price")
+const displayPrice= document.getElementById("item-price");
 
 let newImgSrc = JSON.parse(localStorage.getItem("imageSrc"));
 let itemName = JSON.parse(localStorage.getItem("itemName"));
@@ -190,11 +190,76 @@ btnColors[4].addEventListener("click", ()=>{
 });
 
 
+// script for the other product section 
+
+const itemsImages = document.querySelectorAll(".items-images")
+
+let imgSrc = "";
+let nameOfItem = "";
+let priceOfItem = 0;
 
 
+itemsImages[0].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[0], "SONOVO SC28 Pant", 12000)
+});
+itemsImages[1].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[1], "SONOVO MSC03 Black pant", 10000)
+});
+itemsImages[2].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[2], "SONOVO J001 Jacket and VB Combat", 19000)
+});
+itemsImages[3].addEventListener("click", ()=> {
+    sendToSelect(itemsImages[3], "SONOVO SUD98 set", 16000)
+});
 
-// btnsForSizes.forEach((btnForSize) =>{
-//     btnForSize.addEventListener("click", ()=> {
-//         btnForSize.classList.add("active")
-//     })
-// })
+
+// fuction to send item to the select page 
+
+function sendToSelect(itemImg, itemName, itemPrice) {
+    imgSrc = itemImg.src;
+    nameOfItem = itemName;
+    priceOfItem = itemPrice;
+    updateLocalStorage();
+    window.location.reload(true);
+}
+
+// function to set items to localStorage 
+
+function updateLocalStorage() {
+    localStorage.setItem("imageSrc", JSON.stringify(imgSrc));
+    localStorage.setItem("itemName", JSON.stringify(nameOfItem));
+    localStorage.setItem("itemPrice", JSON.stringify(priceOfItem));
+}
+
+
+// section for the add to cart 
+
+// const addToCartBtn = document.querySelector(".add-to-cart");
+// const itemQty = document.getElementById("quantity");
+
+
+// addToCartBtn.addEventListener("click", ()=> {
+//     let output = itemQty.value;
+//     addToCart(itemName, itemPrice, output)
+// });
+
+// let cart = [];
+
+// // fuction for the add to cart 
+// function addToCart(productName, price, quantity) {
+//     let item = {
+//         productName: productName,
+//         price: price,
+//         quantity: quantity
+//     };
+
+//     cart.push(item);
+//     updateStorage();
+
+// }
+
+
+// function for saving item to localStorage 
+// function updateStorage() {
+//     localStorage.setItem("cart", JSON.stringify(cart));
+// }

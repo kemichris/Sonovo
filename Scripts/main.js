@@ -114,9 +114,6 @@ Slideroll();
 
 // script for the items
 const itemsImages = document.querySelectorAll(".items-images")
-// const sud96Img = document.getElementById("sud96");
-// const sc30Img = document.getElementById("sc30")
-// const sc
 
 let imgSrc = "";
 let nameOfItem = "";
