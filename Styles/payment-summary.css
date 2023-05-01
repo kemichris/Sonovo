@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --olive-green: #393926;
+    --white: #ffffff;
+    --black: #000;
+    --cold-snow: #FFF8FC;
+    --button-color: #646537;
+    --grey: #615F5F;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* styling for the nav section  */
+
+nav {
+    background-color: var(--olive-green);
+    height: 3.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.active.mobile-logo, .nav-icon {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    list-style: none;
+    margin: 0;
+    padding: 0 7.5rem;
+}
+
+.nav-items {
+    display: flex;
+}
+
+li img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.nav-items li a {
+    color: var(--cold-snow);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-cart {
+    display: flex;
+}
+
+.profile-icon {
+    margin-right: 2.5rem;
+}
+/* end of styling for the nav  */
+
+h1 {
+    margin-top: 0;
+}
+
+
+
+@media (max-width:810px) {
+    /* nav bar section  */
+    nav {
+        height: fit-content;
+        background-color: var(--white);
+        padding-bottom: 0.5rem;
+    }
+
+    nav ul {
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    .nav-items {
+       display: none;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+    
+    .active.mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        display: inline;
+        margin-right: 85%;
+    }
+
+    .nav-icon img {
+        width: 1.125rem;
+        height: 0.75rem;
+        cursor: pointer;
+    }
+
+    .profile-icon, .search-icon {
+        margin-right: 1rem;
+    }
+
+
+    li img {
+        width: 0.938rem;
+        height: 1.125rem;
+        filter: invert(100%);
+    }
+
+    h1 {
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width:500px) {
+    /* nav bar section  */
+    nav {
+        height: fit-content;
+        background-color: var(--white);
+    }
+
+    nav ul {
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    .nav-items {
+       display: none;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+    
+    .active.mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        display: inline;
+        margin-right: 70%;
+    }
+
+    .nav-icon img {
+        width: 1.125rem;
+        height: 0.75rem;
+        cursor: pointer;
+    }
+
+    .profile-icon, .search-icon {
+        margin-right: 1rem;
+    }
+
+
+    li img {
+        width: 0.938rem;
+        height: 1.125rem;
+        filter: invert(100%);
+    }
+
+     /* search bar section  */
+
+     .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 0 1.5rem;
+    }
+
+    .search-field {
+        width: 17.438rem;
+        padding: 0.5rem 1rem 0.5rem 3rem;
+        background-color: #E0E0E0E5;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 0.875rem;
+        outline: none ;
+        margin-left: -2.5rem;
+    }
+
+
+    .search-icon-btn, .close-search {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .close-search {
+        margin-left: 1.594rem;
+    }
+
+    .search-icon-btn img {
+        width: 1.093rem;
+        height: 1.093rem;
+        object-fit: cover;
+        filter: invert(100%);
+    }
+
+    .search-bar.active {
+        display: none;
+    }
+
+    /* styling for mobile menu drop down  */
+
+    .mobile-menu {
+        padding: 2.5rem 0;
+        background-color: #646537;
+        height: fit-content;
+    }
+
+     .mobile-menu .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem; 
+    }
+
+    .anchor-divs, .category-drop-down {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #FFF8FC4D;
+    }
+
+    .anchor-divs a, .text-icon p {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+
+    .text-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-icon p {
+        margin: 0;
+    }
+
+    .mobile-menu .search-bar .search-field {
+        background-color: #FDF9FB;
+    }
+
+    .mobile-menu .close-search img {
+        filter: invert(100%);
+    }
+
+    .mobile-menu .social-icons {
+        padding-left: 1.5rem;
+    }
+
+    .social-icons img {
+        margin-top: 1.313rem;
+    }
+
+    .mobile-menu .social-icons .ig-icon {
+        margin-left: 0;
+    }
+
+    .drop-down-items {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .drop-down-items a {
+        font-size: 1.25rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: #FFF8FC;
+        text-decoration: none;
+    }
+
+    .mobile-menu.active, .nav-ul.active, .drop-down-items.active, .collapse-icon.active, .drop-down-icon.active {
+        display: none;
+    }
+    /* end of styling for nav bar  */
+
+    /* styling for the summary section  */
+
+    h1 {
+        margin-left: 1.5rem;
+        font-size: 1.25rem;
+        font-family: 'DM Sans', sans-serif;
+        color: #333333;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .item-count {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        background-color: #646537;
+    }
+
+    .item-count p {
+        font-size: 0.813rem;
+        font-family: 'DM Sans', sans-serif;
+        color: #FFFAFD;
+    }
+
+    .item-count small {
+        font-size: 1.125rem;
+        color: #FFFAFD;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    .naira {
+        text-decoration-style: double;
+    }
+
+    /* styling for the form action  */
+    .form-section {
+        margin: 0 1.5rem 3rem 1.5rem;
+    }
+
+    .payment-method {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #646537;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .payment-method label {
+        font-size: 1rem;
+        font-family: 'DM Sans', sans-serif;
+        color: #333333;
+        margin-bottom: 0.25rem;
+    }
+
+    .payment-method select {
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .payment-method select option, .payment-method select {
+        font-weight: 500;
+        font-size: 1rem;
+        color: #333333E5;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    /* styling for the payment and shipping  */
+    
+    .delivery-shipping {
+        display: flex;
+        border: 1px solid #646537;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .delivery, .shipping {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .delivery p, .shipping p {
+        font-size: 16px;
+        font-weight: 700;
+        color: #646537;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .delivery.active, .shipping.active {
+        background-color: #646537;
+        border-radius: 0.5rem;
+    }
+    .delivery.active p, .shipping.active p {
+        color: #FFFAFD;
+    }
+
+    /* styling for the form  */
+
+    form input, .state, .country {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding:0.5rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #646537;
+        height: 2rem;
+    }
+
+    .state, .country {
+        justify-content: center;
+    }
+
+    .state select option, .country select option {
+        font-size: 1rem;
+        color: #848484;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .state select, .country select {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #848484;
+        font-size: 1rem;
+    }
+
+    .country.active, .state.active {
+        display: none;
+    }
+
+    form button {
+        font-size: 1.125;
+        font-weight: 700;
+        color: #FFF8FC;
+        background-color: #646537;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem 0 0.5rem 0.5rem ;
+    }
+
+}

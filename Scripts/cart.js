@@ -49,6 +49,32 @@ categoryCollapse.addEventListener("click", ()=> {
 });
 
 
+// script for the item count 
+const itemCount = document.getElementById("item-count");
+const countContainer = document.querySelector(".orders")
+
+let itemCounter = countContainer.children.length;
+
+itemCount.innerHTML = itemCounter;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // create cart items 
 // const cartContainer = document.querySelector(".orders");
 
