@@ -394,6 +394,43 @@ h1 {
     .remove-and-qty input:focus {
         outline: none !important;
     }
+
+    .subtotal-button {
+        margin: 0 1.5rem 2.5rem 1.5rem;
+    }
+
+    .subtotal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .subtotal p {
+        font-size: 1.25rem;
+        color: #454444F2;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .subtotal small {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #131414;
+    }
+
+    .naira {
+        text-decoration-style: double;
+    }
+
+    .checkout-btn {
+        font-size: 1.125rem;
+        color: #FFF8FC;
+        font-weight: 700;
+        background-color: #646537;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem 0 0.5rem 0.5rem ;
+        width: 100%;
+    }
     /* end of styling for order section  */
 
     /* footer section  */
