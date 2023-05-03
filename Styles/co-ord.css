@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --olive-green: #393926;
+    --white: #ffffff;
+    --black: #000;
+    --cold-snow: #FFF8FC;
+    --button-color: #646537;
+    --grey: #615F5F;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* styling for the nav section  */
+
+nav {
+    background-color: var(--olive-green);
+    height: 3.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.active.mobile-logo, .nav-icon {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    list-style: none;
+    margin: 0;
+    padding: 0 7.5rem;
+}
+
+.nav-items {
+    display: flex;
+}
+
+li img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.nav-items li a {
+    color: var(--cold-snow);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-cart {
+    display: flex;
+}
+
+.profile-icon {
+    margin-right: 2.5rem;
+}
+/* end of styling for the nav  */
+
+h1 {
+    margin-top: 0;
+}
+
+
+
+@media (max-width:810px) {
+    /* nav bar section  */
+    nav {
+        height: fit-content;
+        background-color: var(--white);
+        padding-bottom: 0.5rem;
+    }
+
+    nav ul {
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    .nav-items {
+       display: none;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+    
+    .active.mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        display: inline;
+        margin-right: 85%;
+    }
+
+    .nav-icon img {
+        width: 1.125rem;
+        height: 0.75rem;
+        cursor: pointer;
+    }
+
+    .profile-icon, .search-icon {
+        margin-right: 1rem;
+    }
+
+
+    li img {
+        width: 0.938rem;
+        height: 1.125rem;
+        filter: invert(100%);
+    }
+
+    h1 {
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width:500px) {
+    /* nav bar section  */
+    nav {
+        height: fit-content;
+        background-color: var(--white);
+    }
+
+    nav ul {
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    .nav-items {
+       display: none;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+    
+    .active.mobile-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        display: inline;
+        margin-right: 70%;
+    }
+
+    .nav-icon img {
+        width: 1.125rem;
+        height: 0.75rem;
+        cursor: pointer;
+    }
+
+    .profile-icon, .search-icon {
+        margin-right: 1rem;
+    }
+
+
+    li img {
+        width: 0.938rem;
+        height: 1.125rem;
+        filter: invert(100%);
+    }
+
+     /* search bar section  */
+
+     .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 0 1.5rem;
+    }
+
+    .search-field {
+        width: 17.438rem;
+        padding: 0.5rem 1rem 0.5rem 3rem;
+        background-color: #E0E0E0E5;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 0.875rem;
+        outline: none ;
+        margin-left: -2.5rem;
+    }
+
+
+    .search-icon-btn, .close-search {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .close-search {
+        margin-left: 1.594rem;
+    }
+
+    .search-icon-btn img {
+        width: 1.093rem;
+        height: 1.093rem;
+        object-fit: cover;
+        filter: invert(100%);
+    }
+
+    .search-bar.active {
+        display: none;
+    }
+
+    /* styling for mobile menu drop down  */
+
+    .mobile-menu {
+        padding: 2.5rem 0;
+        background-color: #646537;
+        height: fit-content;
+    }
+
+     .mobile-menu .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem; 
+    }
+
+    .anchor-divs, .category-drop-down {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #FFF8FC4D;
+    }
+
+    .anchor-divs a, .text-icon p {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+    }
+
+    .text-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-icon p {
+        margin: 0;
+    }
+
+    .mobile-menu .search-bar .search-field {
+        background-color: #FDF9FB;
+    }
+
+    .mobile-menu .close-search img {
+        filter: invert(100%);
+    }
+
+    .mobile-menu .social-icons {
+        padding-left: 1.5rem;
+    }
+
+    .social-icons img {
+        margin-top: 1.313rem;
+    }
+
+    .mobile-menu .social-icons .ig-icon {
+        margin-left: 0;
+    }
+
+    .drop-down-items {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .drop-down-items a {
+        font-size: 1.25rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: #FFF8FC;
+        text-decoration: none;
+    }
+
+    .mobile-menu.active, .nav-ul.active, .drop-down-items.active, .collapse-icon.active, .drop-down-icon.active {
+        display: none;
+    }
+    /* end of styling for nav bar  */
+
+    /* styling for the head and pants section  */
+
+    h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        color: #333333;
+        margin-bottom: 1.75rem;
+        text-align: center;
+    }
+
+    /* styling for the pants container  */
+
+    .pants-container {
+        margin: 0 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+        row-gap: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .pant-item img {
+        width: 9.5rem;
+        height: 15rem;
+    }
+
+    .pant-item p {
+        margin-top: 0.3rem;
+        margin-bottom: 0;
+        font-size: 0.625rem;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        color: rgba(69, 68, 68, 0.9);
+    }
+
+    .pant-item small {
+        font-size: 0.625rem;
+        font-family: 500;
+        font-family: 'DM Sans', sans-serif;
+        color: rgba(69, 68, 68, 0.9);
+    }
+
+
+    /* footer section  */
+    
+    footer {
+        background-color: #333333;
+        padding: 1.5rem 0 2.8rem 0;
+    }
+
+    .news-letter {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #888888CC;
+        padding: 0 2rem;
+    }
+
+    .news-letter h3, .links h3 {
+        font-size: 1rem;
+        font-family: 'DM Sans', sans-serif;
+        color: #FFFAFD;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .news-letter p {
+        color: #FFFAFDCC;
+        font-size: 1rem;
+        font-family: 'DM Sans', sans-serif;
+        margin: 0;
+    }
+
+    .news-letter input {
+        height: 1.5rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #FAF6F6B2;
+        background-color: transparent;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        color: #FFFAFDCC;
+    }
+
+    .news-letter input:focus {
+        outline: none !important;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #FAF6F6B2;
+    }
+
+    .news-letter button {
+        padding: 0.5rem;
+        width: fit-content;
+        font-size: 0.875rem;
+        color: #646537;
+        font-family: 'DM Sans', sans-serif;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: #FFFFFFDE;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #888888CC;
+        padding: 1rem 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .links a {
+        font-size: 0.875rem;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        color: #EAEAE7E5;
+        margin-top: 1rem;
+        text-decoration: none;
+    }
+
+    .ig-icon {
+        margin: 0 1rem 0 2rem;
+    }
+}

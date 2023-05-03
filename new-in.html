@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Jacket</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Styles/cart.css">
+    <link rel="stylesheet" href="Styles/new-in.css">
 </head>
 <body>
-     <!-- nav bar section -->
+    <!-- nav bar section -->
     <header>
         <nav>
             <img class="mobile-logo active" src="Assets/Images/logo-mobile.png" alt="">
@@ -39,7 +39,7 @@
                     <a class="profile-icon" href=""><img src="Assets/Icons/profile.png" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img src="Assets/Icons/cart.png" alt=""></a>
+                    <a href="cart.html"><img src="Assets/Icons/cart.png" alt=""></a>
                 </li>
             </div>
            </ul>
@@ -98,83 +98,95 @@
         </nav>
     </header>
     <main>
-        <!-- order summary  -->
-        <h1>Cart Summary</h1>
-        <div class="item-count">
-            <p>Items (<span id="item-count">0</span>)</p>
-        </div>
-        <div class="orders">
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- displaying the pant outfits -->
+        <h1>NEW IN</h1>
 
-        <!-- sub total and check out section  -->
-        <div class="subtotal-button">
-            <div class="subtotal">
-                <p>Subtotal:</p>
-                <SMall><del class="naira">N</del><span id="total">17000</span></SMall>
+        <div class="pants-container">
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-7.png" alt="" class="items-images"></a>
+                <p>SONOVO SC28 Pant</p>
+                <small>Price: <strong>#12,000</strong></small> 
             </div>
-            <a href="payment-summary.html"><button class="checkout-btn">Checkout</button></a>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-8.png" alt="" class="items-images"></a>
+                <p>SONOVO MSC03 Black pant</p>
+                <small>Price: <strong>#10,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-9.png" alt="" class="items-images"></a>
+                <p>SONOVO J001 Jacket and VB Combat</p>
+                <small>Price: <strong>#19,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-10.png" alt="" class="items-images"></a>
+                <p>SONOVO SUD98 set</p>
+                <small>Price: <strong>#16,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-11.png" alt="" class="items-images"></a>
+                <p>SONOVO SUD14 set</p>
+                <small>Price: <strong>#16,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-12.png" alt="" class="items-images"></a>
+                <p>SONOVO SC34 Cargo pant</p>
+                <small>Price: <strong>#12,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-13.png" alt="" class="items-images"></a>
+                <p>SONOVO oversized Green Combat</p>
+                <small>Price: <strong>#10,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-14.png" alt="" class="items-images"></a>
+                <p>SONOVO SC02 Pant</p>
+                <small>Price: <strong>#10,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-7.png" alt="" class="items-images"></a>
+                <p>SONOVO SC28 Pant</p>
+                <small>Price: <strong>#12,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-8.png" alt="" class="items-images"></a>
+                <p>SONOVO MSC03 Black pant</p>
+                <small>Price: <strong>#10,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-9.png" alt="" class="items-images"></a>
+                <p>SONOVO J001 Jacket and VB Combat</p>
+                <small>Price: <strong>#19,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-10.png" alt="" class="items-images"></a>
+                <p>SONOVO SUD98 set</p>
+                <small>Price: <strong>#16,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-11.png" alt="" class="items-images"></a>
+                <p>SONOVO SUD14 set</p>
+                <small>Price: <strong>#16,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-12.png" alt="" class="items-images"></a>
+                <p>SONOVO SC34 Cargo pant</p>
+                <small>Price: <strong>#12,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-13.png" alt="" class="items-images"></a>
+                <p>SONOVO oversized Green Combat</p>
+                <small>Price: <strong>#10,000</strong></small> 
+            </div>
+            <div class="pant-item">
+                <a href="select.html"><img src="Assets/Images/img-14.png" alt="" class="items-images"></a>
+                <p>SONOVO SC02 Pant</p>
+                <small>Price: <strong>#10,000</strong></small> 
+            </div>
         </div>
-        
     </main>
-    
-     <!-- footer section  -->
-     <footer>
+
+    <!-- footer section  -->
+    <footer>
         <div class="news-letter">
             <h3>Don't miss out on our exclusive updates.</h3>
             <p>Email Address</p>
@@ -191,8 +203,6 @@
         <a class="ig-icon" href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/instagram-icon.png" alt=""></a>
         <a href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/facebook-icon.png" alt=""></a>
     </footer>
-    
-    <script src="Scripts/cart.js"></script>
-    <!-- <script src="Scripts/select.js"></script> -->
+    <script src="Scripts/pant.js"></script>
 </body>
 </html>
