@@ -89,28 +89,28 @@ function updateSlide(){
 
 // script for the review section 
 
-const reviewSlide = document.querySelector(".review-carousel");
-const testimonies = document.querySelectorAll(".testimony-1");
+// const reviewSlide = document.querySelector(".review-carousel");
+// const testimonies = document.querySelectorAll(".testimony-1");
 
-let slide = 1;
-// let time;
+// let slide = 1;
+// // let time;
 
-function Slideroll(){
-    if (slide > testimonies.length) {
-        slide = 1
-    }else if (slide < 1) {
-        slide = testimonies.length;
-    }
-    reviewSlide.style.transform = `translateX(-${(slide -1) * 20.4}rem)`
+// function Slideroll(){
+//     if (slide > testimonies.length) {
+//         slide = 1
+//     }else if (slide < 1) {
+//         slide = testimonies.length;
+//     }
+//     reviewSlide.style.transform = `translateX(-${(slide -1) * 20.4}rem)`
 
-    timeout = setTimeout(() => {
-        slide++;
-        Slideroll();
-    }, 3000);
+//     timeout = setTimeout(() => {
+//         slide++;
+//         Slideroll();
+//     }, 3000);
 
-}
+// }
 
-Slideroll();
+// Slideroll();
 
 // script for the items
 const itemsImages = document.querySelectorAll(".items-images")
