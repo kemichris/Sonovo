@@ -609,6 +609,11 @@ footer {
     }
 
     /* review  */
+
+    .review-carousel {
+        gap: 2rem;
+    }
+
     .img-name p, .tesimony-text {
         font-size: 0.6rem;
     }
@@ -624,7 +629,19 @@ footer {
 }
 
 @media (max-width:600px) {
-    
+    /* styling the top container button  */
+
+    .carousel-slides button {
+        font-size: 1.5rem;
+        left: 8%;
+        bottom: 10%;
+    }
+
+    /* collection  */
+
+    .collection-container h2, .review-container h2  {
+        font-size: 2rem;
+    }
 }
 
 
