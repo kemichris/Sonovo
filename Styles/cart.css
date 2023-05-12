@@ -62,6 +62,14 @@ li img {
 .profile-icon {
     margin-right: 2.5rem;
 }
+
+.mobile-menu.active {
+    display: none;
+}
+
+.search-bar {
+    display: none;
+}
 /* end of styling for the nav  */
 
 h1 {
