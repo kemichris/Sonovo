@@ -72,8 +72,189 @@ li img {
 }
 /* end of styling for the nav  */
 
+.desktop-logo-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desktop-logo {
+    margin: 5rem 0 0 0;
+}
+
+/* styling for the summary section  */
+
 h1 {
+    margin-left: 7rem;
+    font-size: 2.5rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 1rem;
     margin-top: 0;
+}
+
+.item-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background-color: #646537;
+    margin: 0 7rem;
+}
+
+.item-count p {
+    font-size: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFAFD;
+    margin: 0;
+}
+
+.item-count small {
+    font-size: 2.25rem;
+    color: #FFFAFD;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.naira {
+    text-decoration-style: double;
+}
+
+/* styling for the form action  */
+.form-section {
+    margin: 0 7rem 3rem 7rem;
+}
+
+.payment-method {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #646537;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+.payment-method label {
+    font-size: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333;
+    margin-bottom: 0.25rem;
+}
+
+.payment-method select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.payment-method select option, .payment-method select {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333333E5;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* styling for the payment and shipping  */
+
+.delivery-shipping {
+    display: flex;
+    border: 1px solid #646537;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.delivery, .shipping {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.delivery p, .shipping p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #646537;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.delivery.active, .shipping.active {
+    background-color: #646537;
+    border-radius: 0.5rem;
+}
+.delivery.active p, .shipping.active p {
+    color: #FFFAFD;
+}
+
+/* styling for the form  */
+
+form input, .state, .country {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding:0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #646537;
+    height: 2rem;
+}
+
+.state, .country {
+    justify-content: center;
+}
+
+.state select option, .country select option {
+    font-size: 1rem;
+    color: #848484;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.state select, .country select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #848484;
+    font-size: 1rem;
+}
+
+.country.active, .state.active {
+    display: none;
+}
+
+form button {
+    font-size: 1.125;
+    font-weight: 700;
+    color: #FFF8FC;
+    background-color: #646537;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem 0 0.5rem 0.5rem ;
+}
+
+/* media responsiveness  */
+@media (max-width:1050px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .item-count {
+        padding: 1rem 1.5rem;
+    }
+
+    .item-count p, .payment-method label, .delivery-shipping p {
+        font-size: 1.5rem;
+    }
+
+    .item-count small {
+        font-size: 1.75rem;
+    }
+
+
 }
 
 
@@ -247,6 +428,39 @@ h1 {
     }
 }
 
+@media (max-width:700px) {
+    h1 {
+        margin-left: 4rem;
+    }
+
+    .item-count {
+        margin: 0 4rem;
+    }
+
+    .form-section {
+        margin: 0 4rem 3rem 4rem;
+    }
+
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .item-count {
+        padding: 1rem 1.5rem;
+    }
+
+    .item-count p, .payment-method label, .delivery-shipping p {
+        font-size: 1rem;
+    }
+
+    .item-count small {
+        font-size: 1.25rem;
+    }
+}
+
 @media (max-width:500px) {
     /* nav bar section  */
     nav {
@@ -416,35 +630,20 @@ h1 {
     h1 {
         margin-left: 1.5rem;
         font-size: 1.25rem;
-        font-family: 'DM Sans', sans-serif;
-        color: #333333;
-        font-weight: 500;
         margin-bottom: 1rem;
     }
 
-    .item-count {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1.5rem;
-        background-color: #646537;
+    .item-count {       
+        padding: 1rem 1.5rem;
+        margin: 0;
     }
 
     .item-count p {
         font-size: 0.813rem;
-        font-family: 'DM Sans', sans-serif;
-        color: #FFFAFD;
     }
 
     .item-count small {
         font-size: 1.125rem;
-        color: #FFFAFD;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-    }
-
-    .naira {
-        text-decoration-style: double;
     }
 
     /* styling for the form action  */
@@ -454,18 +653,12 @@ h1 {
 
     .payment-method {
         width: inherit;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #646537;
-        border-radius: 0.5rem;
         padding: 0.5rem 1rem;
         margin: 1.5rem 0;
     }
 
     .payment-method label {
         font-size: 1rem;
-        font-family: 'DM Sans', sans-serif;
-        color: #333333;
         margin-bottom: 0.25rem;
     }
 
@@ -478,39 +671,20 @@ h1 {
     .payment-method select option, .payment-method select {
         font-weight: 500;
         font-size: 1rem;
-        color: #333333E5;
-        font-family: 'DM Sans', sans-serif;
     }
 
     /* styling for the payment and shipping  */
     
     .delivery-shipping {
-        display: flex;
-        border: 1px solid #646537;
         border-radius: 0.5rem;
         height: 2.5rem;
         margin-bottom: 1.5rem;
     }
 
-    .delivery, .shipping {
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        cursor: pointer;
-    }
-
     .delivery p, .shipping p {
-        font-size: 16px;
-        font-weight: 700;
-        color: #646537;
-        font-family: 'DM Sans', sans-serif;
+        font-size: 1rem;
     }
 
-    .delivery.active, .shipping.active {
-        background-color: #646537;
-        border-radius: 0.5rem;
-    }
     .delivery.active p, .shipping.active p {
         color: #FFFAFD;
     }
@@ -518,48 +692,20 @@ h1 {
     /* styling for the form  */
 
     form input, .state, .country {
-        display: flex;
-        flex-direction: column;
         width: 95%;
         padding:0.5rem;
         font-size: 1rem;
         margin-bottom: 1.5rem;
         border-radius: 0.5rem;
-        border: 1px solid #646537;
         height: 2rem;
-    }
-
-    .state, .country {
-        justify-content: center;
     }
 
     .state select option, .country select option {
         font-size: 1rem;
-        color: #848484;
-        font-family: 'DM Sans', sans-serif;
     }
 
     .state select, .country select {
-        border: none;
-        outline: none;
-        cursor: pointer;
-        color: #848484;
         font-size: 1rem;
-    }
-
-    .country.active, .state.active {
-        display: none;
-    }
-
-    form button {
-        font-size: 1.125;
-        font-weight: 700;
-        color: #FFF8FC;
-        background-color: #646537;
-        padding: 1rem;
-        width: 100%;
-        border: none;
-        border-radius: 0.5rem 0 0.5rem 0.5rem ;
     }
 
 }
