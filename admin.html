@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="Styles/admin.css">
+</head>
+<body>
+    <main>
+        <!-- side bar menu  -->
+        <div class="side-bar-menu">
+            <div class="dashboard active">
+                <img class="dashboard-img" src="Assets/Icons/dashboard.png" alt="">
+                <p class="dashboard-p active">Dashboard</p>
+            </div>
+            <div class="product">
+                <img class="product-img" src="Assets/Icons/product.png" alt="">
+                <p class="product-p">Products</p>
+            </div>
+            <div class="orders">
+                <img class="orders-img" src="Assets/Icons/orders.png" alt="">
+                <p class="orders-p">Orders</p>
+            </div>
+            <div class="customers">
+                <img class="customers-img" src="Assets/Icons/profile.png" alt="">
+                <p class="customers-p">Customers</p>
+            </div>
+            <div class="setting">
+                <img class="setting-img" src="Assets/Icons/setting.png" alt="">
+                <p class="setting-p">Setting</p>
+            </div>
+        </div>
+
+        <!-- main section  -->
+        <div class="main-section">
+            <div class="top-bar">
+                <input type="search" placeholder="Search" id="">
+                <img src="Assets/Icons/notification.png" alt="">
+                <div class="profile-img">
+                    <img src="Assets/Images/directors-img.png" alt="">
+                </div>
+            </div>
+
+            <!-- dashboard-section  -->
+            <div class="dashboard-section">
+                <h1>Dashboard</h1>
+                <div class="item-analytics-flex">
+                    <div class="total-earning">
+                        <div class="total-earning-text">
+                            <p class="first">Total Earning</p>
+                            <p class="last"><span>0</span>%</p>
+                        </div>
+                        <p class="earning-figure">0.00</p>
+                        <div class="total-earning-logo">
+                            <img src="Assets/Icons/earning.png" alt="">
+                        </div>
+                    </div>
+                    <div class="new-orders">
+                        <div class="new-orders-text">
+                            <p>New Orders</p>
+                            <p class="last"><span>0</span>%</p>
+                        </div>
+                        <p class="new-figure">0.00</p>
+                        <div class="new-orders-logo">
+                            <img src="Assets/Icons/new-orders.png" alt="">
+                        </div>
+                    </div>
+                    <div class="total-orders">
+                        <div class="total-orders-text">
+                            <p>Total Orders</p>
+                            <p class="last"><span>0</span>%</p>
+                        </div>
+                        <p class="orders-figure">0.00</p>
+                        <div class="total-orders-logo">
+                            <img src="Assets/Icons/total-orders.png" alt="">
+                        </div>
+                    </div>
+                    <div class="total-customers">
+                        <div class="total-customers-text">
+                            <p>Total Customers</p>
+                            <p class="last"><span>0</span>%</p>
+                        </div>
+                        <p class="customer-figure">0.00</p>
+                        <div class="total-customers-logo">
+                            <img src="Assets/Icons/total-customers.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- analytics  -->
+                <div class="analytics">
+                    <p>No Data Saved Yet !</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Scripts/admin.js"></script>
+</body>
+</html>
