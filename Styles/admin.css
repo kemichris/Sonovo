@@ -178,7 +178,7 @@ main {
 }
 
 /* analytics  */
-.analytics {
+.analytics{
     margin:2.5rem 5rem 3rem 0;
 }
 
@@ -418,4 +418,42 @@ td {
 .delete-edit {
     display: flex;
     gap: 1.3rem;
+}
+
+.order-status {
+    padding-right: 1rem;
+}
+
+td button {
+    padding: 0.625rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.pending {
+    color: #B68915;
+    background-color: #CCBB9040;
+}
+
+.completed {
+    color: #036603;
+    background-color: #74D17440;
+}
+
+.failed {
+    color: #DC0C0C;
+    background-color: #D0949440;
+}
+
+.analytics.active {
+    display: none;
+}
+
+/* //////////////////PRODUCT PAGE///////////////  */
+.prodcut-page {
+    margin:2.5rem 5rem 3rem 0;
 }
