@@ -50,7 +50,10 @@
                     <div class="total-earning">
                         <div class="total-earning-text">
                             <p class="first">Total Earning</p>
-                            <p class="last"><span>0</span>%</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-up.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
                         </div>
                         <p class="earning-figure">0.00</p>
                         <div class="total-earning-logo">
@@ -60,7 +63,10 @@
                     <div class="new-orders">
                         <div class="new-orders-text">
                             <p>New Orders</p>
-                            <p class="last"><span>0</span>%</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-down.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
                         </div>
                         <p class="new-figure">0.00</p>
                         <div class="new-orders-logo">
@@ -70,7 +76,10 @@
                     <div class="total-orders">
                         <div class="total-orders-text">
                             <p>Total Orders</p>
-                            <p class="last"><span>0</span>%</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-up.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
                         </div>
                         <p class="orders-figure">0.00</p>
                         <div class="total-orders-logo">
@@ -80,7 +89,10 @@
                     <div class="total-customers">
                         <div class="total-customers-text">
                             <p>Total Customers</p>
-                            <p class="last"><span>0</span>%</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-down.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
                         </div>
                         <p class="customer-figure">0.00</p>
                         <div class="total-customers-logo">
@@ -91,7 +103,372 @@
 
                 <!-- analytics  -->
                 <div class="analytics">
-                    <p>No Data Saved Yet !</p>
+                    <!-- <p>No Data Saved Yet !</p> -->
+                    <div class="sales-best-selling">
+                        <div class="sales-analysis">
+                            <div class="title-period">
+                                <h2>Sales Analysis</h2>
+                                <select name="period" id="period">
+                                    <option class="period-title" disabled>Select Period</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="Yearly">Yearly</option>
+                                </select>
+                            </div>
+                            <div class="bar-chart">
+                                <div class="price-range">
+                                    <p>500k</p>
+                                    <p>400k</p>
+                                    <p>300k</p>
+                                    <p>200k</p>
+                                    <p>100k</p>
+                                    <p class="last-price">0</p>
+                                </div>
+                                <div class="bars">
+                                    <div class="period-bar">
+                                        <div class="bar bar1"></div>
+                                        <p>Sun</p>
+                                    </div>
+                                    <div class="period-bar">
+                                        <div class="bar bar2"></div>
+                                        <p>Mon</p>
+                                    </div>
+                                    <div class="period-bar">
+                                        <div class="bar bar3"></div>
+                                        <p>Tue</p>
+                                    </div>
+                                    <div class="period-bar">
+                                        <div class="bar bar4"></div>
+                                        <p>Wed</p>
+                                    </div>
+                                    <div class="period-bar">
+                                        <div class="bar bar5"></div>
+                                        <p>Thur</p>
+                                    </div>
+                                    <div class="period-bar">
+                                        <div class="bar bar6"></div>
+                                        <p>Fri</p>
+                                    </div>
+                                    <div class="period-bar">
+                                        <div class="bar bar7"></div>
+                                        <p>Sat</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="best-selling">
+                            <div class="title-category">
+                                <h2>Best Selling</h2>
+                                <select name="period" id="period">
+                                    <option class="category" disabled selected>Category</option>
+                                    <option value="pants">Pants</option>
+                                    <option value="jackets">Jacket</option>
+                                    <option value="cord-outfit">Co-ORD Outfit</option>
+                                    <option value="skirt">Skirt</option>
+                                    <option value="new-in">New In</option>
+                                </select>
+                            </div>
+                            <div class="best-selling-product">
+                                <div class="best-selling-item best-selling-item1">
+                                    <img class="item-image" src="Assets/Images/img-3.png" alt="">
+                                    <div class="item-details">
+                                        <p class="product-name">SONOVO SUD96 COORD fit</p>
+                                        <small>Price: #<span>17,000</span></small>
+                                        <div class="item-rating">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/half-star.png" alt="">
+                                            <p>4.5/5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="best-selling-item">
+                                    <img class="item-image" src="Assets/Images/img-3.png" alt="">
+                                    <div class="item-details">
+                                        <p class="product-name">SONOVO SUD96 COORD fit</p>
+                                        <small>Price: #<span>17,000</span></small>
+                                        <div class="item-rating">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/star-admin.png" alt="">
+                                            <img src="Assets/Icons/half-star.png" alt="">
+                                            <p>4.5/5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="see-more" href="sign-up.html">See More</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- products and ordered item -->
+                    <div class="products-ordered-item">
+                        <div class="products">
+                            <div class="title-add-item">
+                                <h2>Products</h2>
+                                <button>Add Item</button>
+                            </div>
+                            <table>
+                                <tr class="header">
+                                    <th>Qty</th>
+                                    <th>product Code</th>
+                                    <th class="th-price">Price</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr class="tr-1">
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit" class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="ordered-item">
+                            <div class="title-add-item">
+                                <h2>Ordered Item</h2>
+                                <button>Add Item</button>
+                            </div>
+                            <table>
+                                <tr class="header">
+                                    <th>Qty</th>
+                                    <th>product Code</th>
+                                    <th>Price</th>
+                                    <th>Order Status</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr class="tr-1">
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td>
+                                        <button>Pending</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td>
+                                        <button>Completed</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td><del class="naira">N</del><span id="item-price">10000</span></td>
+                                    <td>
+                                        <button>Failed</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td>
+                                        <button>Pending</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td>
+                                        <button>Completed</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td><del class="naira">N</del><span id="item-price">10000</span></td>
+                                    <td>
+                                        <button>Failed</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td>
+                                        <button>Pending</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td>
+                                        <del class="naira">N</del><span id="item-price">10000</span>
+                                    </td>
+                                    <td>
+                                        <button>Completed</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SONOVO SVL</td>
+                                    <td><del class="naira">N</del><span id="item-price">10000</span></td>
+                                    <td>
+                                        <button>Failed</button>
+                                    </td>
+                                    <td class="delete-edit">
+                                        <img src="Assets/Icons/delete.png" alt="">
+                                        <img src="Assets/Icons/edit-pen.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
