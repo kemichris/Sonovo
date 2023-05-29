@@ -386,8 +386,7 @@ main {
     border: 0.5px solid #737A8CB2;
     box-shadow: 2px 16px 30px rgba(3, 41, 241, 0.05);
 }
-
-table {
+ table{
     width: inherit;
 }
 
@@ -413,6 +412,7 @@ td {
     font-family: 'DM Sans', sans-serif;
     color: #232323;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .delete-edit {
@@ -454,6 +454,313 @@ td button {
 }
 
 /* //////////////////PRODUCT PAGE///////////////  */
-.prodcut-page {
+.product-page {
+    margin:2.5rem 8rem 3rem 0;
+}
+
+.products-pg {
+    width: 100%;
+    background-color: #EAEEFC;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    border: 0.5px solid #737A8CB2;
+    box-shadow: 2px 16px 30px rgba(3, 41, 241, 0.05);
+}
+.qty, tr td:first-child {
+    padding-left: 1rem;
+}
+
+tr td:last-child {
+    padding-right: 1rem;
+}
+
+.action {
+    text-align: end;
+    padding-right: 1rem;
+}
+
+.product-delete-edit {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+.product-delete-edit img {
+    cursor: pointer;
+}
+
+.tr-2, .tr-4, .tr-6, .tr-8, .tr-10 {
+    background: linear-gradient(261.32deg, #F6FBFF 14.46%, rgba(246, 251, 255, 0.71) 98.47%);
+    
+}
+
+.product-page.active {
+    display: none;
+}
+
+/*///////////PRODUCT PAGE  WHEN CLICKED ////////////*/
+
+.product-cliked-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-cliked-details img {
+    width: 18rem;
+    height: 33rem;
+}
+
+.product-cliked, .add-item-product {
+    background-color: #EAEEFC;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin:2.5rem 5rem 3rem 0;
+    /* width: 90%; */
+}
+
+.code-name, .price, .in-stock, .sizes, .colors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.code-name p:first-child, .price p:first-child, .in-stock p:first-child, .sizes p:first-child, .colors p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: #6A6A6AF2;
+    margin: 0;
+}
+
+.code-name p:last-child, .price p:last-child, .in-stock p:last-child {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #232323;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+.code-name p:last-child {
+    margin-left: 1rem;
+}
+
+.price p:last-child {
+    margin-left: 6rem;
+}
+
+.in-stock p:last-child {
+    margin-left: 4rem;
+}
+
+.buttons {
+    margin-left: 4rem;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: 1px solid #6A6A6A;
+    color: #232323;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 2px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.grey {
+    background-color: grey;
+}
+.buttons-color {
+    display: flex;
+    gap: 0.644rem;
+    margin-left: 6rem;
+}
+
+.buttons-color button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    border: none;
+    padding: 0.25rem;
+}
+
+.back-btn {
+    background-color: #E4E9FD;
+    padding:0.6rem 1rem;
+    color: #2D2C2C;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.back-btn i {
+    margin-left: 0.5rem;
+    color: #2D2C2C;
+}
+
+.product-back-flex {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* other products  */
+.product-cliked h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: #232323;
+    margin: 0;
+}
+
+.product-cliked table {
+    width: 100%;
+}
+
+.product-cliked.active {
+    display: none;
+}
+
+/*-- ///////////PRODUCT PAGE  FOR ADD ITEM //////////// */
+.add-item-product h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2D2C2C;
+}
+
+.add-item-product form {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1.5px solid #888888CC;
+}
+
+.add-item-product form span {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #232323B2;
+    
+}
+
+.add-item-product form input {
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #232323B2;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-item-product form input:focus {
+    outline: none;
+}
+
+.image-upload {
+    width: 15rem;
+    height: 15rem;
+    background-color: #D4DDFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9DA2A7;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.image-upload p {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: #888888;
+}
+
+.selected-img {
+    width: inherit;
+    height: inherit;
+}
+.selected-img.active {
+    display: none;
+}
+
+.save-cancle {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.save-cancle button {
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.save-btn {
+    background-color: #333333;
+    color: #F6FBFF;
+    border: none;
+}
+
+.cancle-btn {
+    border: 1px solid #9DA2A7;
+    color: #888989;
+}
+
+.add-item-product.active {
+    display: none;
+}
+
+
+/*-- ///////////ORDERS PAGE //////////// */
+.orders-page {
     margin:2.5rem 5rem 3rem 0;
 }
+
+.orders-pg {
+    width: 100%;
+    background-color: #EAEEFC;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    border: 0.5px solid #737A8CB2;
+    box-shadow: 2px 16px 30px rgba(3, 41, 241, 0.05);
+}
+
+ .orders-pg .title-add-item h2 {
+    margin: 0 1rem;
+}
+
+.title-add-item button {
+    margin-right: 1rem;
+}
+
+.orders-page.active {
+    display: none;
+}
+
