@@ -720,6 +720,7 @@ tr td:last-child {
     font-size: 1rem;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
 }
 
 .save-btn {
@@ -739,7 +740,7 @@ tr td:last-child {
 
 
 /*-- ///////////ORDERS PAGE //////////// */
-.orders-page {
+.orders-page, .add-item-orders {
     margin:2.5rem 5rem 3rem 0;
 }
 
@@ -764,3 +765,129 @@ tr td:last-child {
     display: none;
 }
 
+/*-- ///////////ORDERS PAGE FOR ADD ITEM//////////// */
+.add-item-orders {
+    background-color: #EAEEFC;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    /* margin:2.5rem 5rem 3rem 0; */
+}
+
+.add-item-orders h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2D2C2C;
+}
+
+.add-item-orders form {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1.5px solid #888888CC;
+}
+
+.add-item-orders form span {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #232323B2;
+    
+}
+
+.add-item-orders form input, .add-item-orders select {
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #232323B2;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-item-orders form input:focus, .add-item-orders select:focus {
+    outline: none;
+}
+
+.add-item-orders.active {
+    display: none;
+}
+
+
+/*-- /////////// CUSTOMERS PAGE //////////// */
+.customers-page, .customer-clicked  {
+    background-color: #EAEEFC;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    margin:2.5rem 5rem 3rem 0;
+}
+
+.customers-page table {
+    width: 100%;
+}
+
+.customers-page.active {
+    display: none;
+}
+
+/*-- /////////// CUSTOMERS PAGE WHEN CLICKED //////////// */
+
+.customer-clicked form {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1.5px solid #888888CC;
+}
+
+.customer-clicked form span {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #232323B2;
+    
+}
+
+.customer-clicked form input {
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #232323B2;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.customer-clicked form input:focus {
+    outline: none;
+}
+
+.total-amount-flex, .total-item-bought {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.total-amount-flex p:first-child, .total-item-bought p:first-child {
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #232323B2;
+}
+
+.total-item-bought {
+    margin-bottom: 3rem;
+}
+
+.total-amount-flex p span, .total-item-bought p span, .total-item-bought p:last-child {
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: #232323;
+}
+
+.customer-clicked.active {
+    display: none;
+}
