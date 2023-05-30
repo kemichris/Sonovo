@@ -362,7 +362,7 @@ main {
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
     color: #2D2C2C;
-    margin: 0;
+    margin: 0 0 0 1rem;
 }
 
 .title-add-item button {
@@ -381,7 +381,7 @@ main {
 .products, .ordered-item {
     width: 100%;
     background-color: #EAEEFC;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     border-radius: 1rem;
     border: 0.5px solid #737A8CB2;
     box-shadow: 2px 16px 30px rgba(3, 41, 241, 0.05);

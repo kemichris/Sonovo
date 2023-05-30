@@ -1,4 +1,4 @@
-// side menu bar 
+///////////// SIDE BAR MENU CONST///////////////
 const dashboard = document.querySelector(".dashboard");
 const product = document.querySelector(".product");
 const orders = document.querySelector(".orders");
@@ -18,25 +18,21 @@ const customersImg = document.querySelector(".customers-img");
 const settingImg = document.querySelector(".setting-img");
 
 
-product.addEventListener("click", ()=> {
-    product.classList.add("active");
-    dashboard.classList.remove("active");
-    orders.classList.remove("active");
-    customers.classList.remove("active");
-    setting.classList.remove("active");
 
-    productP.classList.add("active");
-    dashboardP.classList.remove("active");
-    ordersP.classList.remove("active");
-    customersP.classList.remove("active");
-    settingP.classList.remove("active");
+///////////// PAGES CONST ///////////////
+const pageHeading = document.getElementById("admin-heading")
+const analyticsPage = document.querySelector(".analytics");
+const productPage = document.querySelector(".product-page");
+const productClicked = document.querySelector(".product-cliked");
+const addItemProduct = document.querySelector(".add-item-product");
+const ordersPage = document.querySelector(".orders-page");
+const addItemOrders = document.querySelector(".add-item-orders");
+const customersPage = document.querySelector("customers-page");
+const cutomerClicked = document.querySelector(".customer-clicked");
 
-    dashboardImg.classList.add("active")
-    productImg.classList.add("active");
-    ordersImg.classList.remove("active");
-    customersImg.classList.remove("active");
-    settingImg.classList.remove("active");
-});
+
+
+
 dashboard.addEventListener("click", ()=> {
     product.classList.remove("active");
     dashboard.classList.add("active");
@@ -113,3 +109,40 @@ setting.addEventListener("click", ()=> {
     customersImg.classList.remove("active");
     settingImg.classList.add("active");
 });
+
+
+///////////// SWITCHING SECTIONS //////////////
+//////////// product section ///////////////
+product.addEventListener("click", ()=> {
+    product.classList.add("active");
+    dashboard.classList.remove("active");
+    orders.classList.remove("active");
+    customers.classList.remove("active");
+    setting.classList.remove("active");
+
+    productP.classList.add("active");
+    dashboardP.classList.remove("active");
+    ordersP.classList.remove("active");
+    customersP.classList.remove("active");
+    settingP.classList.remove("active");
+
+    dashboardImg.classList.add("active")
+    productImg.classList.add("active");
+    ordersImg.classList.remove("active");
+    customersImg.classList.remove("active");
+    settingImg.classList.remove("active");
+
+    clickProduct();
+});
+
+
+///////// FUNCTIONS FOR PAGES SWITCH ///////////
+function clickProduct() {
+    pageHeading.innerHTML = "Products";
+    analyticsPage.classList.add("active");
+    productPage.classList.remove("active");
+}
+
+function clickOrders() {
+    
+}
