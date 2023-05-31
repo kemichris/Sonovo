@@ -135,6 +135,15 @@ customerClickedCancle.addEventListener("click", ()=> {
         customersPage.classList.remove("active");
 });
 
+////////////////// DELETE ICON POP UP//////////////
+const delIcons = document.querySelectorAll(".del-icon");
+const popUpAlert = document.getElementById("popup-alert");
+
+delIcons.forEach((delicon)=> {
+    delicon.addEventListener("click", ()=> {
+        popUpAlert.classList.remove("active");
+    })
+})
 
 
 

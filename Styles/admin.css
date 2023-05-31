@@ -87,6 +87,29 @@ main {
     color: #454444B2;
 }
 
+.notification-icon, .notification-circle {
+    cursor: pointer;
+}
+
+.notification-circle {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 100%;
+    background-color: #036603;
+    position: relative;
+    left: -4.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-circle p {
+    color: #F6FBFF;
+    font-size: 0.7;
+    font-weight: 500;
+    margin: 0;
+}
+
 .profile-img {
     margin-right: 2rem;
 }
@@ -891,3 +914,64 @@ tr td:last-child {
 .customer-clicked.active {
     display: none;
 }
+
+/*////////// POPUP ALERT ////////// */
+.popup-alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6FBFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    padding: 5rem;
+}
+
+.sure {
+    font-size: 1.5rem;
+    color: #232323;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.warning {
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #7B7878;
+    margin: 0 0 2rem;
+}
+
+.proceed-cancle {
+    display: flex;
+    gap: 1rem;
+}
+
+.proceed-cancle button{
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.proceed-cancle button:first-child {
+    background-color: #DE4041;
+    color: #F6FBFF;
+    border: none;
+}
+
+.proceed-cancle button:last-child {
+    background-color: #EEF2FF;
+    color: #9DA2A7;
+    border: 1px solid #9DA2A7;
+}
+
+.popup-alert.active {
+    display: none;
+}
+
