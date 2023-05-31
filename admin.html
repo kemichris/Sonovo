@@ -221,7 +221,7 @@
                                     <th class="th-price">Price</th>
                                     <th>Action</th>
                                 </tr>
-                                <tr class="tr-1">
+                                <tr class="tr-1 cutomer-row">
                                     <td>1</td>
                                     <td>SONOVO SVL</td>
                                     <td>
@@ -477,7 +477,7 @@
                     <div class="products-pg">
                         <div class="title-add-item">
                             <h2>Products</h2>
-                            <button>Add Item</button>
+                            <button id="add-new-product">Add Item</button>
                         </div>
                         <table>
                             <tr class="header">
@@ -486,7 +486,7 @@
                                 <th class="th-price">Price</th>
                                 <th class="action">Action</th>
                             </tr>
-                            <tr class="tr-1">
+                            <tr class="tr-1 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -497,7 +497,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-2">
+                            <tr class="tr-2 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -508,7 +508,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-3">
+                            <tr class="tr-3 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -519,7 +519,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-4">
+                            <tr class="tr-4 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -530,7 +530,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-5">
+                            <tr class="tr-5 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -541,7 +541,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-6">
+                            <tr class="tr-6 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -552,7 +552,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-7">
+                            <tr class="tr-7 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -563,7 +563,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-8">
+                            <tr class="tr-8 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -574,7 +574,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-9">
+                            <tr class="tr-9 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -585,7 +585,7 @@
                                     <img src="Assets/Icons/edit-pen.png" alt="">
                                 </td>
                             </tr>
-                            <tr class="tr-10">
+                            <tr class="tr-10 product-row">
                                 <td>1</td>
                                 <td>SONOVO SVL</td>
                                 <td>
@@ -601,9 +601,9 @@
                 </div>
 
                 <!-- ///////////PRODUCT PAGE  WHEN CLICKED ////////////-->
-                <div class="product-cliked active">
+                <div class="product-clicked active">
                     <div class="product-back-flex">
-                        <div class="product-cliked-details">
+                        <div class="product-clicked-details">
                             <img src="Assets/Images/img-16.png" alt="">
                             <div class="clicked-details">
                                 <div class="code-name">
@@ -645,7 +645,7 @@
                             </div>
                             
                         </div>
-                        <button class="back-btn">Back <i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="back-btn" id="product-back">Back <i class="fa-solid fa-arrow-left"></i></button>
                     </div>
                     
                     <h2>Other Products</h2>
@@ -729,7 +729,7 @@
                     </form>
                     <div class="save-cancle">
                         <button class="save-btn">Save</button>
-                        <button class="cancle-btn">Cancle</button>
+                        <button class="cancle-btn" id="cancle-product">Cancle</button>
                     </div>
 
                 </div>
@@ -740,7 +740,7 @@
                     <div class="orders-pg">
                         <div class="title-add-item">
                             <h2>Orders</h2>
-                            <button>Add Item</button>
+                            <button id="add-item-order-btn">Add Item</button>
                         </div>
                         <table>
                             <tr class="header">
@@ -953,7 +953,7 @@
                     </form>
                     <div class="save-cancle">
                         <button class="save-btn">Save</button>
-                        <button class="cancle-btn">Cancle</button>
+                        <button class="cancle-btn" id="cancle-order-btn">Cancle</button>
                     </div>
 
                 </div>
@@ -970,7 +970,7 @@
                             <th>Address</th>
                             <th class="action">Action</th>
                         </tr>
-                        <tr class="tr-1">
+                        <tr class="tr-1 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -983,7 +983,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-2">
+                        <tr class="tr-2 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -996,7 +996,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-3">
+                        <tr class="tr-3 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1009,7 +1009,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-4">
+                        <tr class="tr-4 cutomer-row">
                            <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1022,7 +1022,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-5">
+                        <tr class="tr-5 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1035,7 +1035,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-6">
+                        <tr class="tr-6 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1048,7 +1048,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-7">
+                        <tr class="tr-7 cutomer-row">
                            <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1061,7 +1061,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-8">
+                        <tr class="tr-8 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1074,7 +1074,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-9">
+                        <tr class="tr-9 cutomer-row">
                             <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1087,7 +1087,7 @@
                                 <img src="Assets/Icons/edit-pen.png" alt="">
                             </td>
                         </tr>
-                        <tr class="tr-10">
+                        <tr class="tr-10 cutomer-row">
                            <td>Alex Jane</td>
                             <td>08034125890</td>
                             <td>
@@ -1122,7 +1122,7 @@
                     
                     <div class="save-cancle">
                         <button class="save-btn">Save</button>
-                        <button class="cancle-btn">Cancle</button>
+                        <button class="cancle-btn" id="cancle-customer-btn">Cancle</button>
                     </div>
                     
                 </div>

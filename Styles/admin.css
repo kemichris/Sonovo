@@ -500,18 +500,18 @@ tr td:last-child {
 
 /*///////////PRODUCT PAGE  WHEN CLICKED ////////////*/
 
-.product-cliked-details {
+.product-clicked-details {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.product-cliked-details img {
+.product-clicked-details img {
     width: 18rem;
     height: 33rem;
 }
 
-.product-cliked, .add-item-product {
+.product-clicked, .add-item-product {
     background-color: #EAEEFC;
     padding: 2rem 1rem;
     border-radius: 1rem;
@@ -625,7 +625,7 @@ tr td:last-child {
 }
 
 /* other products  */
-.product-cliked h2 {
+.product-clicked h2 {
     font-size: 1.5rem;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
@@ -633,11 +633,11 @@ tr td:last-child {
     margin: 0;
 }
 
-.product-cliked table {
+.product-clicked table {
     width: 100%;
 }
 
-.product-cliked.active {
+.product-clicked.active {
     display: none;
 }
 
