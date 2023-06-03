@@ -12,6 +12,13 @@ const mobileMenu = document.querySelector(".mobile-menu");
 const categoryDropdown = document.querySelector(".drop-down-icon");
 const categoryCollapse = document.querySelector(".collapse-icon");
 const dropDownItems = document.querySelector(".drop-down-items");
+const desktopCategoryDropdown = document.querySelector(".desktop-category-dropdown");
+const desktopCategory = document.getElementById("desktop-category");
+
+// desktop category dropdown 
+desktopCategory.addEventListener("click", ()=> {  
+    desktopCategoryDropdown.classList.toggle("active");
+})
 
 // opening the desktop search bar 
 openSearchBar.addEventListener("click", ()=> {
