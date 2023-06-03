@@ -4,11 +4,24 @@ const navMenuItems = document.getElementById("nav-menu-items");
 const closeMobileMenu = document.getElementById("menu-close");
 const closeSearchBar = document.getElementById("close-search-bar");
 const openSearchBar = document.getElementById("open-search-bar");
+const desktopMenuClose = document.getElementById("desktop-menu-close");
+const desktopSearchBar = document.querySelector(".desktop-search-bar");
+const deskSearchClose = document.getElementById("desktop-menu-close");
 const searchBar = document.querySelector(".search-bar");
 const mobileMenu = document.querySelector(".mobile-menu");
 const categoryDropdown = document.querySelector(".drop-down-icon");
 const categoryCollapse = document.querySelector(".collapse-icon");
 const dropDownItems = document.querySelector(".drop-down-items");
+
+// opening the desktop search bar 
+openSearchBar.addEventListener("click", ()=> {
+    desktopSearchBar.classList.remove("active");
+});
+
+// closing the desktop search bar
+deskSearchClose.addEventListener("click", ()=> {
+    desktopSearchBar.classList.add("active");
+});
 
 // opening the search bar 
 openSearchBar.addEventListener("click", ()=> {

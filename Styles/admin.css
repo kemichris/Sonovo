@@ -691,7 +691,7 @@ tr td:last-child {
     
 }
 
-.add-item-product form input {
+.add-item-product form input, .add-item-product form select {
     margin-bottom: 1.5rem;
     height: 2rem;
     width: 80%;
@@ -702,7 +702,7 @@ tr td:last-child {
     font-size: 1rem;
 }
 
-.add-item-product form input:focus {
+.add-item-product form input:focus, .add-item-product form select:focus {
     outline: none;
 }
 
@@ -1049,4 +1049,8 @@ tr td:last-child {
 
 .notification img {
     cursor: pointer;
+}
+
+.notification-section.active {
+    display: none;
 }
