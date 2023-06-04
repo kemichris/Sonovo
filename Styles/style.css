@@ -156,26 +156,11 @@ li img {
 
 /* styling for the top container  */
 
-/* .carousel-slides {
+.top-container {
     width: 100%;
-    height: 100rem;
-    background-size: cover;
-    flex-shrink: 0;
-} */
+}
 
-/* .carousel-container {
-    width:100%;
-    height: 100rem;
-    overflow: hidden;
-} */
-
-/* .slider {
-    display: flex;
-    transition: transform .4s ease-in-out;
-   
-} */
-
-.carousel-slides button {
+.top-container button {
     background-color: #B9B7B1;
     padding: 1rem;
     border-radius: 1rem;
@@ -184,53 +169,11 @@ li img {
     position: absolute;
     left: 8%;
     bottom: -100%;
-}
-
-.slide-1 img {
-    width: 100%;
-}
-
-/* .slide-1 {
-    background-image: url("../Assets/Images/img-1.png");
-} */
-
-.slide-2 {
-    background-image: url("../Assets/Images/img-2.png");
-    /* display: none; */
-}
-
-.slide-3 {
-    background-image: url("../Assets/Images/img-3.png");
-    /* display: none; */
-}
-
-.slide-4 {
-    background-image: url("../Assets/Images/img-4.png");
-    /* display: none; */
-}
-
-.btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 20px;
-    opacity: .5;
     cursor: pointer;
-
 }
 
-.btn.prev {
-    left: 10px
-} 
-
-.btn.next {
-    right: 10px;
-}
-
-.btn:hover {
-    opacity: 1;
-    
+.top-container img {
+    width: 100%;
 }
 /* end of styling for the top container  */
 
@@ -497,8 +440,7 @@ footer {
 
 @media (max-width:1050px) {
     /* styling the top container button  */
-
-    .carousel-slides button {
+    .top-container button {
         padding:0.5rem 1rem;
         font-size: 2rem;
         left: 8%;
@@ -742,15 +684,12 @@ footer {
     }
     
 
-    .carousel-container {
+    .top-container {
         padding-top: 9rem;
     }
 
-
-
     /* styling the top container button  */
-
-    .carousel-slides button {
+    .top-container button {
         font-size: 1.5rem;
         left: 8%;
         bottom: -20%;
@@ -825,8 +764,7 @@ footer {
 
 @media (max-width:600px) {
     /* styling the top container button  */
-
-    .carousel-slides button {
+    .top-container button {
         font-size: 1.5rem;
         left: 8%;
         bottom: 10%;
@@ -1018,16 +956,9 @@ footer {
 
     /* styling for the carousel */
 
-    .carousel-slides {
-        width: 25.813rem;
-        height: 28.75rem;
-        background-size: cover;
-        flex-shrink: 0;
-    }
-
-    .carousel-slides button {
+    .top-container button {
         left: 6%;
-        bottom: 30%;
+        bottom: 50%;
         padding: 0.5rem;
         font-size: 1rem;
     }
@@ -1114,6 +1045,7 @@ footer {
     .review-container {
         margin: 0 1.5rem;
         overflow: hidden;
+        /* width: 100%; */
     }
 
     .review-container h2 {
@@ -1126,14 +1058,14 @@ footer {
 
     .review-carousel {
         display: flex;
+        gap: 0;
         transition: transform .4s ease-in-out;
     }
 
     .review-carousel .testimony-1 {
-        width: 18.4rem; /*10.875*/
+        width: 19.5rem; /*10.875*/
         background-color: #393939;
         border-radius: 0.5rem;
-        padding: 1rem;
         flex-shrink: 0;
     }
 
