@@ -1035,8 +1035,8 @@ footer {
     /* styling for the more display section */
 
     .extra-contiainer {
-        padding: 0 0;
-        margin-top: 2rem;
+        padding: 0 ;
+        margin-top: 0;
     }
 
     .extra-contiainer .image-1, .extra-contiainer .image-2 {
