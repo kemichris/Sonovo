@@ -29,6 +29,11 @@ const ordersPage = document.querySelector(".orders-page");
 const addItemOrders = document.querySelector(".add-item-orders");
 const customersPage = document.querySelector(".customers-page");
 const cutomerClicked = document.querySelector(".customer-clicked");
+const dashboardSection = document.querySelector(".dashboard-section");
+const notificatonPage = document.querySelector(".notification-section");
+
+// notification icon const 
+const notificationIcon = document.getElementById("notify-icon");
 
 
 setting.addEventListener("click", ()=> {
@@ -68,6 +73,12 @@ orders.addEventListener("click", ()=> {
 customers.addEventListener("click", ()=> {
     clickCustomers();
 });
+
+notificationIcon.addEventListener("click", ()=> {
+    clickNotification();
+})
+
+
 
 
 /////////////ITEM CLICKED ON PRODUCT PAGE //////////////
@@ -179,6 +190,8 @@ function clickDashboard() {
     addItemProduct.classList.add("active");
     addItemOrders.classList.add("active");
     cutomerClicked.classList.add("active");
+    notificatonPage.classList.add("active");
+    dashboardSection.classList.remove("active");
 }
 
 function clickProduct() {
@@ -211,6 +224,8 @@ function clickProduct() {
     addItemProduct.classList.add("active");
     addItemOrders.classList.add("active");
     cutomerClicked.classList.add("active");
+    notificatonPage.classList.add("active");
+    dashboardSection.classList.remove("active");
 }
 
 function clickOrders() {
@@ -243,6 +258,8 @@ function clickOrders() {
     addItemProduct.classList.add("active");
     addItemOrders.classList.add("active");
     cutomerClicked.classList.add("active");
+    notificatonPage.classList.add("active");
+    dashboardSection.classList.remove("active");
 }
 
 function clickCustomers() {
@@ -275,4 +292,31 @@ function clickCustomers() {
     addItemProduct.classList.add("active");
     addItemOrders.classList.add("active");
     cutomerClicked.classList.add("active");
+    notificatonPage.classList.add("active");
+    dashboardSection.classList.remove("active");
+}
+
+function clickNotification() {
+    // menu switches and colors 
+    product.classList.remove("active");
+    dashboard.classList.add("active");
+    orders.classList.remove("active");
+    customers.classList.remove("active");
+    setting.classList.remove("active");
+    //
+    productP.classList.remove("active");
+    dashboardP.classList.add("active");
+    ordersP.classList.remove("active");
+    customersP.classList.remove("active");
+    settingP.classList.remove("active");
+    //
+    dashboardImg.classList.remove("active")
+    productImg.classList.remove("active");
+    ordersImg.classList.remove("active");
+    customersImg.classList.remove("active");
+    settingImg.classList.remove("active");
+
+    // pages switches 
+    dashboardSection.classList.add("active");
+    notificatonPage.classList.remove("active");
 }
