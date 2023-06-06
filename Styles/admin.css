@@ -1332,11 +1332,11 @@ tr td:last-child {
     .item-analytics-flex {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        margin-right: 4rem;
+        margin-right: 1rem;
     }
 
     .analytics{
-        margin:2.5rem 4rem 3rem 0;
+        margin:2.5rem 1rem 3rem 0;
     } 
 
     /* sales and best selling  */
