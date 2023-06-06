@@ -1184,7 +1184,6 @@ tr td:last-child {
     }
 
     /* top bar  */
-
     .top-bar {
         justify-content: start;
         gap: 1rem;
@@ -1244,7 +1243,45 @@ tr td:last-child {
 }
 
 @media (max-width:600px) {
+    /* side bar menu  */
+    .side-bar-menu { 
+        padding: 5rem 0 0 0.5rem;
+    }  
+
+    .side-bar-menu div {
+        margin-bottom: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .side-bar-menu div p {
+        font-size: 0.8rem;
+        
+    }
+    
+    .side-bar-menu div img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+     /* main section  */
+     .main-section {
+        margin-left: 7.5rem;
+    }
+
+    /* top bar  */
+    .top-bar input {  
+        margin-right: 7rem;
+    }
+
+    .notification-circle {
+        right: 7.5rem;
+    }
+
     /* dashboard section  */
+    .dashboard-section h1 {
+        font-size: 1.5rem;
+    }
+
     .item-analytics-flex {
         gap: 1.5rem;
         margin-right: 5rem;
@@ -1253,4 +1290,106 @@ tr td:last-child {
     .analytics{
         margin:2.5rem 5rem 3rem 0;
     } 
+}
+
+@media (max-width:560px) {
+    /* analytics  */
+    .item-analytics-flex {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-right: 8rem;
+    }
+}
+
+@media (max-width:500px) {
+    /* side bar menu  */
+    .side-bar-menu div p {
+        font-size: 0.6rem;
+        
+    }
+
+    .side-bar-menu div img {
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    /* main section  */
+    .main-section {
+        margin-left: 6rem;
+    }
+
+    /* top bar  */
+    .top-bar input {  
+        margin-right: 2rem;
+    }
+
+    .notification-circle {
+        right: 1.5rem;
+    }
+
+    /* analytics  */
+    .item-analytics-flex {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-right: 4rem;
+    }
+
+    .analytics{
+        margin:2.5rem 4rem 3rem 0;
+    } 
+
+    /* sales and best selling  */
+     .title-period h2, .title-category h2 {
+        font-size: 0.8rem;
+    }
+    
+    .title-period select, .title-category select {
+        padding: 0.3rem 0.6rem;    
+        font-size: 0.8rem;    
+    }
+    
+    .bar-chart {
+        display: flex;
+    }
+    
+    .price-range p, .period-bar p {
+        font-size: 0.5rem;        
+    }
+    
+    .bars {
+        margin-left: 1.2rem;
+        gap: 1rem;
+    }
+    
+    .bar {
+        width: 0.8rem;      
+    }
+
+    /* product page  */
+    .title-add-item h2 {
+        font-size: 0.8rem;
+    }
+
+    .title-add-item button {
+        font-size: 0.5rem;
+    }
+
+    th {
+        font-size: 0.6rem;
+    }
+
+    td {
+        font-size: 0.5rem;
+    }
+    
+    .delete-edit {
+        gap: 0.5rem;
+    }
+    
+    td button {
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+
 }
