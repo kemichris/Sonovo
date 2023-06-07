@@ -157,6 +157,21 @@ delIcons.forEach((delicon)=> {
 })
 
 
+////////////////// SIDE BAR MENU COLLAPSE//////////////
+const navIcon = document.querySelector(".nav-icon");
+const SideBarMenu = document.querySelector(".side-bar-menu");
+const closeSideBar = document.querySelector(".close-sidebar")
+
+navIcon.addEventListener("click", ()=> {
+    SideBarMenu.classList.add("active");
+})
+
+closeSideBar.addEventListener("click", ()=> {
+    SideBarMenu.classList.remove("active");
+})
+
+
+
 
 
 ///////// FUNCTIONS FOR PAGES SWITCH ///////////

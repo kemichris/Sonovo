@@ -1182,7 +1182,23 @@ tr td:last-child {
 
 @media (max-width:810px) {
     .side-bar-menu {
-        display: none;
+        display: none;  
+    }
+
+    .side-bar-menu.active {
+        display: inline;
+        padding: 2rem 0 0 2rem;
+        height: fit-content;
+    }
+
+    .dashboard {
+        margin-top: 3rem;
+    }
+
+    .close-sidebar {
+        display: inline;
+        filter: invert(100%);
+        cursor: pointer;
     }
 
      /* main section  */
@@ -1199,6 +1215,7 @@ tr td:last-child {
 
     .nav-icon {
         display: inline;
+        cursor: pointer;
     }
 
     .top-bar input {
