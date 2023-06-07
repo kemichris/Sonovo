@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.verify-container {
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.verify-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #333333;
+}
+
+p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #333333B2;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #888888CC;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+}
+
+.back-btn {
+    background-color: white;
+    color: #646537;
+    border: 1px solid #646537;
+}
+
+.submit-btn {
+    background-color: #646537;
+    color: white;
+    border: none;
+}
+
+
+/* ///////////// MEDIA RESPONSIVENESS ///////////// */
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p, input, .buttons button {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:460px) {
+    .verify-container {
+        margin: 0 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+}
