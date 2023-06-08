@@ -46,6 +46,10 @@ main {
     color: #333333;
 }
 
+.side-bar-menu div a {
+    text-decoration: none;
+}
+
 .side-bar-menu div img.active {
     filter: invert(100%);
 }
@@ -88,6 +92,10 @@ main {
 
 .top-bar input::placeholder {
     color: #454444B2;
+}
+
+.top-bar input:focus {
+    outline: none;
 }
 
 .notification-icon, .notification-circle {
@@ -977,12 +985,13 @@ tr td:last-child {
 
 
 /*////////// NOTIFICATION ////////// */
-.notification-section {
+.notification-section, .setting-section {
     padding-left: 1rem;
     margin-right: 5rem;
+    margin-bottom: 3rem
 }
 
-.notification-section h1 {
+.notification-section h1, .setting-section h1 {
     font-size: 2rem;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
@@ -1050,6 +1059,135 @@ tr td:last-child {
 .notification-section.active {
     display: none;
 }
+
+
+/* ///////// SETTING ////////// */
+/* check notification for some setting styling  */
+.setting-area {
+    background-color: #EAEEFC;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.inter-prof-pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 3rem;
+}
+
+.inter-prof-pass p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333E5;
+    cursor: pointer;
+    margin: 0;
+    padding-bottom: 0.3rem;
+}
+
+.integration.active, .profile-setting.active, .pass-change.active {
+    border-bottom: 3px solid #1949C5;
+}
+
+.email-and-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.email-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-field span {
+    font-size: 0.8rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #888888;
+    margin-bottom: 0.5rem;
+}
+
+.email-field input {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333333;
+    border-radius: 0.5rem;
+    border: 1px solid #797A7B;
+    background: transparent;
+}
+
+.email-field input:focus, .search-inte:focus {
+    outline: none;
+}
+
+.email-field p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #888888;
+    font-weight: 500;
+}
+
+.search-inte {
+    background-color: #DFE2E5;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    color: #454444B2;
+    border: none;
+}
+
+.search-inte::placeholder {
+    color: #454444B2;
+}
+
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+}
+
+.social {
+    background-color: #F6FBFF;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.insta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insta-name-icon {
+    display: flex;
+    align-items: center;
+}
+
+.insta-name-icon p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+.label {
+    background-color: #EAEEFC;
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.setting-section.active {
+    display: none;
+}
+
 
 
 

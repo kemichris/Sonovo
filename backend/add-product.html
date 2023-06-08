@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../backend/adminStyle/admin.css">
+</head>
+<body>
+    <main>
+        <!-- side bar menu  -->
+        <div class="side-bar-menu">
+            <img class="close-sidebar" src="Assets/Icons/x-icon.png" alt="">
+            <div class="dashboard">
+                <img class="dashboard-img active" src="Assets/Icons/dashboard.png" alt="">
+                <a href="admin.html"><p class="dashboard-p">Dashboard</p></a>
+            </div>
+            <div class="product active">
+                <img class="product-img active" src="Assets/Icons/product.png" alt="">
+                <a href="products.html"><p class="product-p active">Products</p></a>
+            </div>
+            <div class="orders">
+                <img class="orders-img" src="Assets/Icons/orders.png" alt="">
+                <a href="orders.html"><p class="orders-p">Orders</p></a>
+            </div>
+            <div class="customers">
+                <img class="customers-img" src="Assets/Icons/profile.png" alt="">
+                <a href="customers.html"><p class="customers-p">Customers</p></a>
+            </div>
+            <div class="setting">
+                <img class="setting-img" src="Assets/Icons/setting.png" alt="">
+                <a href="setting.html"><p class="setting-p">Setting</p></a>
+            </div>
+        </div>
+
+        <!-- /////////// MAIN SECTION ////////////  -->
+        <div class="main-section">
+            <div class="top-bar">
+                <img class="nav-icon" src="Assets/Icons/nav-icon.png" alt="">
+                <input type="search" placeholder="Search" id="">
+                <a href="notification.html"><img class="notification-icon" id="notify-icon" src="Assets/Icons/notification.png" alt=""></a>
+                <div class="notification-circle">
+                    <p>0</p>
+                </div>
+                <div class="profile-img">
+                    <img src="Assets/Images/directors-img.png" alt="">
+                </div>
+            </div>
+
+            <!-- dashboard-section  -->
+            <div class="dashboard-section">
+                <h1 id="admin-heading">PRODUCTS</h1>
+                <div class="item-analytics-flex">
+                    <div class="total-earning">
+                        <div class="total-earning-text">
+                            <p class="first">Total Earning</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-up.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
+                        </div>
+                        <p class="earning-figure">0.00</p>
+                        <div class="total-earning-logo">
+                            <img src="Assets/Icons/earning.png" alt="">
+                        </div>
+                    </div>
+                    <div class="new-orders">
+                        <div class="new-orders-text">
+                            <p>New Orders</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-down.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
+                        </div>
+                        <p class="new-figure">0.00</p>
+                        <div class="new-orders-logo">
+                            <img src="Assets/Icons/new-orders.png" alt="">
+                        </div>
+                    </div>
+                    <div class="total-orders">
+                        <div class="total-orders-text">
+                            <p>Total Orders</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-up.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
+                        </div>
+                        <p class="orders-figure">0.00</p>
+                        <div class="total-orders-logo">
+                            <img src="Assets/Icons/total-orders.png" alt="">
+                        </div>
+                    </div>
+                    <div class="total-customers">
+                        <div class="total-customers-text">
+                            <p>Total Customers</p>
+                            <div class="percent-icon">
+                                <img src="Assets/Icons/icon-down.png" alt="">
+                                <p class="last"><span>0</span>%</p>
+                            </div>
+                        </div>
+                        <p class="customer-figure">0.00</p>
+                        <div class="total-customers-logo">
+                            <img src="Assets/Icons/total-customers.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ///////////PRODUCT PAGE  FOR ADD ITEM ////////////-->
+                <div class="add-item-product">
+                    <h2>Add Item</h2>
+                    <form action="">
+                        <span>Product Code</span>
+                        <input type="text" name="" id="product-code-inp">
+                        <span>Quantity</span>
+                        <input type="text" name="" id="quantity-inp">
+                        <span>Price</span>
+                        <input type="text" name="" id="price-inp">
+                        <span>Category</span>
+                        <select name="" id="">
+                            <option disabled selected>Select Category</option>
+                            <option value="pants">Pants</option>
+                            <option value="jacket">Jacket</option>
+                            <option value="co-ord-outfit">Co-ORD Outfit</option>
+                            <option value="skirt">Skirt</option>
+                            <option value="new-in">New In</option>
+                        </select>
+                        <label class="image-upload" for="upload-img">
+                            <input type="file" name="" id="upload-img" style="display: none;">
+                            <img src="Assets/Icons/upload-icon.png" alt="">
+                            <img class="selected-img active" src="" alt="">
+                            <p>Upload Image</p>
+                        </label>
+                    </form>
+                    <div class="save-cancle">
+                        <button class="save-btn">Save</button>
+                        <a href="products.html"><button class="cancle-btn" id="cancle-product">Cancle</button></a>
+                    </div>
+
+                </div>
+
+                <div class="popup-alert active" id="popup-alert">
+                    <img src="Assets/Icons/alert-icon.png" alt="">
+                    <p class="sure">Are You Sure?</p>
+                    <p class="warning">Clicking on the delete button will permanently erase the data</p>
+                    <div class="proceed-cancle">
+                        <button>Yes, Delete it!</button>
+                        <button>Cancle</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>
