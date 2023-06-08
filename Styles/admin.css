@@ -1217,6 +1217,11 @@ tr td:last-child {
     .orders-page, .add-item-orders {
         margin:2.5rem 3rem 3rem 0;
     }
+
+    /* ///////// CUSTOMER PAGE ///////// */
+    .customers-page, .customer-clicked  {
+        margin:2.5rem 3rem 3rem 0;
+    }
 }
 
 @media (max-width:1000px) {
@@ -1424,6 +1429,11 @@ tr td:last-child {
     .orders-page, .add-item-orders {
         margin:2.5rem 1.5rem 3rem 0;
     }
+
+    /* ///////// CUSTOMER PAGE ///////// */
+    .customers-page, .customer-clicked  {
+        margin:2.5rem 1.5rem 3rem 0;
+    }
 }
 
 @media (max-width:600px) {
@@ -1572,7 +1582,20 @@ tr td:last-child {
        width: 0.8rem;
        height: 0.8rem;
     }
+
+    /* ///////// CUSTOMER PAGE ///////// */
+    .customers-page, .customer-clicked  {
+        margin:2.5rem 1rem 3rem 0;
+    }  
+
+    .customers-page .product-delete-edit {
+        gap: 0.5rem;
+    }
     
+    .customers-page .product-delete-edit img {
+        width: 0.8rem;
+        height: 0.8rem;
+     }
 
 }
 
@@ -1598,6 +1621,20 @@ tr td:last-child {
     }
 
     .orders-page td button {
+        padding: 0.15rem;
+        font-size: 0.3rem;
+    }
+
+    /* ///////// CUSTOMER PAGE ///////// */
+    .customers-page th {
+        font-size: 0.4rem;
+    }
+
+    .customers-page td {
+        font-size: 0.3rem;
+    }
+
+    .customers-page td button {
         padding: 0.15rem;
         font-size: 0.3rem;
     }
