@@ -1021,6 +1021,10 @@ tr td:last-child {
     background-color: transparent;
 }
 
+.notification-type button.active {
+    border-bottom: 3px solid #1949C5;
+}
+
 .notification {
     display: flex;
     align-items: center;
