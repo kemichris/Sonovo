@@ -992,8 +992,7 @@ tr td:last-child {
 /*////////// NOTIFICATION ////////// */
 .notification-section, .setting-section {
     padding-left: 1rem;
-    margin-right: 5rem;
-    margin-bottom: 3rem
+    margin: 0 5rem 3rem 0;
 }
 
 .notification-section h1, .setting-section h1 {
@@ -1061,9 +1060,6 @@ tr td:last-child {
     cursor: pointer;
 }
 
-.notification-section.active {
-    display: none;
-}
 
 
 /* ///////// SETTING ////////// */
@@ -1431,6 +1427,11 @@ tr td:last-child {
     .customers-page, .customer-clicked  {
         margin:2.5rem 3rem 3rem 0;
     }
+
+    /* ///////// NOTIFICATION/SETTING PAGE ///////// */
+    .notification-section, .setting-section {
+        margin: 0 3rem 3rem 0;
+    }
 }
 
 @media (max-width:1000px) {
@@ -1563,6 +1564,28 @@ tr td:last-child {
         padding: 0.25rem;
         font-size: 0.5rem;
     }
+
+
+     /* ///////// NOTIFICATON PAGE ///////// */
+    .noti-dot {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    
+    .noti-and-time p {
+        font-size: 0.8rem;
+        margin: 0 0 0.2rem;
+    }
+    
+    .noti-and-time small {
+        font-size: 0.5rem;
+    }
+
+    .not-action-dot {
+        width: 1.5rem;
+        height: 0.5rem;
+    }
+    
 }
 
 @media (max-width:650px) {
@@ -1643,6 +1666,11 @@ tr td:last-child {
     .customers-page, .customer-clicked  {
         margin:2.5rem 1.5rem 3rem 0;
     }
+
+    /* ///////// NOTIFICATION/SETTING PAGE ///////// */
+    .notification-section, .setting-section {
+        margin: 0 1.5rem 3rem 0;
+    }
 }
 
 @media (max-width:600px) {
@@ -1670,6 +1698,13 @@ tr td:last-child {
     .dashboard-section h1 {
         font-size: 1.5rem;
     }
+
+    /* ///////// NOTIFICATION/SETTING PAGE ///////// */
+    .notification-section h1, .setting-section h1 {
+        font-size: 1.5rem;
+    }
+
+
 }
 
 @media (max-width:500px) {
@@ -1804,7 +1839,41 @@ tr td:last-child {
     .customers-page .product-delete-edit img {
         width: 0.8rem;
         height: 0.8rem;
-     }
+    }
+
+    /* ///////// NOTIFICATION/SETTING PAGE ///////// */
+    .notification-section, .setting-section {
+        margin: 0 1rem 3rem 0;
+    }
+
+     /* ///////// NOTIFICATON PAGE ///////// */
+     .notification-type {
+        gap: 1.5rem;
+        padding: 1rem 0 0.5rem;
+    }
+
+    .notify-content-flex {
+        gap: 1rem;
+    }
+
+    .noti-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    
+    .noti-and-time p {
+        font-size: 0.7rem;
+        margin: 0 0 0.1rem;
+    }
+    
+    .noti-and-time small {
+        font-size: 0.5rem;
+    }
+
+    .not-action-dot {
+        width: 1rem;
+        height: 0.3rem;
+    }
 
 }
 
@@ -1854,6 +1923,33 @@ tr td:last-child {
     .top-bar input {  
         width: 15rem;
         margin-right: 10%;
+    }
+
+     /* ///////// NOTIFICATON PAGE ///////// */
+     .notification-type {
+        gap: 1rem;
+    }
+
+    .notify-content-flex {
+        gap: 0.5rem;
+    }
+
+    .noti-dot {
+        width: 0.3rem;
+        height: 0.3rem;
+    }
+    
+    .noti-and-time p {
+        font-size: 0.6rem;
+    }
+    
+    .noti-and-time small {
+        font-size: 0.3rem;
+    }
+
+    .not-action-dot {
+        width: 0.8rem;
+        height: 0.15rem;
     }
 }
 
