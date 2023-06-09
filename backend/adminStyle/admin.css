@@ -1182,12 +1182,53 @@ tr td:last-child {
     width: 2.5rem;
     height: 1.25rem;
     border-radius: 0.75rem;
+    border: 1px solid #EAEEFC;
+    align-items:center;
+    display: flex;
+    padding: 0 0.2rem;
+    cursor: pointer;
 }
 
-.setting-section.active {
-    display: none;
+.insta-circle {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    animation: toggleOff 0.4s linear forwards;
 }
 
+.insta-input {
+    visibility: hidden;
+}
+
+.insta-input:checked + .label {
+    background-color: #624DE3;
+}
+
+.insta-input:checked + .label .insta-circle {
+    animation: toggleOn 0.4s linear forwards;
+}
+
+
+@keyframes toggleOn {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1.45rem);
+    }
+    
+}
+
+@keyframes toggleOff {
+    0%{
+        transform: translateX(1.45rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
 
 
 
