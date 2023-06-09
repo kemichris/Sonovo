@@ -13,11 +13,16 @@ main {
 /* side bar menu  */
 .side-bar-menu {
     background-color: #333333;
-    height: 100vh;
+    height: 100%;
     padding: 5rem 0 0 2rem;
     position: fixed;
+    overflow: auto;
 }
 
+.side-bar-menu::-webkit-scrollbar{
+    display: none;
+}
+  
 .side-bar-menu div {
     display: flex;
     align-items: center;
@@ -1146,8 +1151,9 @@ tr td:last-child {
 }
 
 .social-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
     row-gap: 3rem;
 }
@@ -1156,20 +1162,27 @@ tr td:last-child {
     background-color: #F6FBFF;
     border-radius: 0.5rem;
     padding: 1rem;
+    height: fit-content;
 }
 
-.insta {
+.social-name {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.insta-name-icon {
+.social-name-icon {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
-.insta-name-icon p {
+.social-name-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.social-name-icon p {
     font-size: 1.5rem;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
@@ -1189,7 +1202,7 @@ tr td:last-child {
     cursor: pointer;
 }
 
-.insta-circle {
+.social-circle {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 100%;
@@ -1197,15 +1210,16 @@ tr td:last-child {
     animation: toggleOff 0.4s linear forwards;
 }
 
-.insta-input {
+.social-input {
     visibility: hidden;
+    position: absolute;
 }
 
-.insta-input:checked + .label {
+.social-input:checked + .label {
     background-color: #624DE3;
 }
 
-.insta-input:checked + .label .insta-circle {
+.social-input:checked + .label .social-circle {
     animation: toggleOn 0.4s linear forwards;
 }
 
@@ -1228,6 +1242,22 @@ tr td:last-child {
         transform: translateX(0);
     }
     
+}
+
+.social-p {
+    font-size: 1rem;
+    color: #1A192680;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.view-integration {
+    font-size: 0.8rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #624DE3;
+    text-align: end;
+    cursor: pointer;
 }
 
 
