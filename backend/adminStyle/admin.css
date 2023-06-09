@@ -1018,6 +1018,7 @@ tr td:last-child {
     color: #333333;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .notification {
