@@ -63,10 +63,14 @@ li img {
 
 .profile-cart {
     display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.profile-icon {
-    margin-right: 2.5rem;
+li .sign-out, .sign-out-mobile {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
 }
 
 .cart-counter {
@@ -366,7 +370,15 @@ footer {
         cursor: pointer;
     }
 
-    .profile-icon, .search-icon {
+    .profile-cart {
+        gap: 1rem;
+    }
+
+    li .sign-out {
+        display: none;
+    }
+
+    .search-icon {
         margin-right: 1rem;
     }
 
@@ -572,12 +584,7 @@ footer {
         height: 0.75rem;
         cursor: pointer;
     }
-
-    .profile-icon, .search-icon {
-        margin-right: 1rem;
-    }
-
-
+    
     li img {
         width: 0.938rem;
         height: 1.125rem;

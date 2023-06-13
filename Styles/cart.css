@@ -64,8 +64,16 @@ li img {
     display: flex;
 }
 
-.profile-icon {
-    margin-right: 2.5rem;
+.profile-cart {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+li .sign-out, .sign-out-mobile {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
 }
 
 .cart-counter {
@@ -477,7 +485,15 @@ footer {
         cursor: pointer;
     }
 
-    .profile-icon, .search-icon {
+    .profile-cart {
+        gap: 1rem;
+    }
+
+    li .sign-out {
+        display: none;
+    }
+
+    .search-icon {
         margin-right: 1rem;
     }
 

@@ -62,10 +62,14 @@ li img {
 
 .profile-cart {
     display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.profile-icon {
-    margin-right: 2.5rem;
+li .sign-out, .sign-out-mobile {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
 }
 
 .cart-counter {
@@ -278,7 +282,15 @@ form button {
         cursor: pointer;
     }
 
-    .profile-icon, .search-icon {
+    .profile-cart {
+        gap: 1rem;
+    }
+
+    li .sign-out {
+        display: none;
+    }
+
+    .search-icon {
         margin-right: 1rem;
     }
 
@@ -506,10 +518,6 @@ form button {
         border: none;
         outline: none;
         cursor: pointer;
-    }
-
-    .close-search {
-        margin-left: 1.594rem;
     }
 
     .search-icon-btn img {
