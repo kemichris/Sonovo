@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Orders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Styles/profile.css">
+    <link rel="stylesheet" href="Styles/users-order.css">
 </head>
 <body>
     <!-- nav bar section -->
@@ -114,7 +114,6 @@
         </div>
     </header>
     <main>
-        <!-- desktop logo  -->
         <div class="desktop-logo-img">
             <img class="desktop-logo" src="Assets/Images/logo-desk.png" alt="">
         </div>
@@ -124,18 +123,30 @@
                 <img id="desktop-menu-close" src="Assets/Icons/x-icon.png" alt="">
             </button> 
         </div>
-
-        <!-- profile details  -->
-        <h1>My Profile Details</h1>
-        <form action="">
-            <input type="text" value="Hephzibah Eefy" id="">
-            <input type="email" value="Hephzib12eefygmail.com" id="">
-            <input type="tel" value="+2349219501309" id="">
-        </form>
-
-        <!-- order history -->
-        <h2>Order History</h2>
-        <p class="order-history">You have placed 12 orders so far.</p>
+        <!-- order summary  -->
+        <h1>Order history</h1>
+        <div class="order-count">
+            <p>Orders (<span id="order-count">0</span>)</p>
+        </div>
+        <div class="orders">
+            <div class="order-container">
+                <img class="item-image" src="Assets/Images/img-3.png" alt="">
+                <div class="order-details">
+                    <p>SONOVO SUD96 COORD fit</p>
+                    <small>Price: #<span>17,000</span></small>
+                    <!-- <button>Cancle order</button> -->
+                </div>
+            </div>
+            <div class="order-container">
+                <img class="item-image" src="Assets/Images/img-4.png" alt="">
+                <div class="order-details">
+                    <p>SONOVO SUD96 COORD fit</p>
+                    <small>Price: #<span>17,000</span></small>
+                    <!-- <button>Cancle order</button> -->
+                </div>
+                </div>
+            </div>
+        </div>    
     </main>
 
     <!-- footer section  -->
@@ -144,7 +155,7 @@
             <h3>Don't miss out on our exclusive updates.</h3>
             <p>Email Address</p>
             <input type="email" name="" id="">
-            <a href=""><button>Sign Up</button></a>
+            <button>Sign Up</button>
         </div>
         <div class="links">
             <h3>Quick Links</h3>
@@ -156,6 +167,8 @@
         <a class="ig-icon" href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/instagram-icon.png" alt=""></a>
         <a href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/facebook-icon.png" alt=""></a>
     </footer>
-    <script src="Scripts/profile.js"></script>
+    
+    <script src="Scripts/users-order.js"></script>
+    
 </body>
 </html>
