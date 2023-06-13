@@ -1093,6 +1093,10 @@ tr td:last-child {
     padding-bottom: 0.3rem;
 }
 
+.inter-prof-pass a {
+    text-decoration: none;
+}
+
 .integration.active, .profile-setting.active{
     border-bottom: 3px solid #1949C5;
 }
@@ -1259,6 +1263,79 @@ tr td:last-child {
     text-align: end;
     cursor: pointer;
 }
+
+/* ///////// SETTING FOR PROFILE////////// */
+.setting-section h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333333;
+}
+
+.view-info {
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #333333B2;
+    margin-top: 0.5rem;
+}
+
+.image-display-change {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    margin: 4rem auto 2rem;
+}
+
+.image-display-change .profile-pic {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.edit-image {
+    cursor: pointer;
+    position: absolute;
+    right: 37%;
+}
+
+.setting-area form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.setting-area form span {
+    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #232323B2;
+    margin-bottom: 0.3rem;
+}
+
+.setting-area form div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #232323B2;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    padding-right: 0.8rem;
+}
+
+.setting-area form input {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    padding-left: 0.5rem;
+    
+}
+
+.setting-area form input:focus {
+    outline: none;
+}
+
+
+
 
 
 
@@ -1454,6 +1531,11 @@ tr td:last-child {
     .notification-section, .setting-section {
         margin: 0 3rem 3rem 0;
     }
+
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 35%;
+    }
 }
 
 @media (max-width:1000px) {
@@ -1526,7 +1608,10 @@ tr td:last-child {
         row-gap: 3rem;
     }
 
-
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 33%;
+    }
     
 }
 
@@ -1579,6 +1664,11 @@ tr td:last-child {
         height: 1rem;
         top: 4.5%;
         right: 7rem;
+    }
+
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 40%;
     }
 }
 
@@ -1725,6 +1815,11 @@ tr td:last-child {
     .notification-section, .setting-section {
         margin: 0 1.5rem 3rem 0;
     }
+
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 37%;
+    }
 }
 
 @media (max-width:600px) {
@@ -1758,7 +1853,10 @@ tr td:last-child {
         font-size: 1.5rem;
     }
 
-    /* ///////// SETTING INTEGRATION //////////// */
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 35%;
+    }
 
 
 }
@@ -1957,6 +2055,39 @@ tr td:last-child {
         row-gap: 1.5rem;
     }
 
+    /* ///////// SETTING FOR PROFILE////////// */
+    .image-display-change {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .edit-image {
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 40%;
+
+    }
+
+    .setting-section h2 {
+        font-size: 1rem;
+    }
+    
+    .view-info {
+        font-size: 0.8rem;
+    }
+
+    .setting-area form div {
+        width: 90%
+    }
+
+    .setting-area form div i {
+        font-size: 0.7rem;
+    }
+
+    .setting-area form span {
+        font-size: 1rem;
+    }
+
 }
 
 @media (max-width:430px) {
@@ -1997,6 +2128,11 @@ tr td:last-child {
     .customers-page td button {
         padding: 0.15rem;
         font-size: 0.3rem;
+    }
+
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 38%;
     }
 }
 
@@ -2040,6 +2176,11 @@ tr td:last-child {
     .top-bar input {  
         width: 15rem;
         margin-right: 5%;
+    }
+
+    /* ///////// SETTING FOR PROFILE////////// */
+    .edit-image {
+        right: 36%;
     }
 }
 
