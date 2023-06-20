@@ -638,3 +638,11 @@ form button {
     }
 }
 
+@media (max-width:370px) {
+    .input{
+        width: 15rem;
+        height: 1rem;
+        font-size: 0.7rem;
+    }
+}
+

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Styles/cart.css">
+    <title>Contact Sonovo</title>
+    <link rel="stylesheet" href="Styles/sign-up.css">
 </head>
 <body>
-     <!-- nav bar section -->
+    <!-- nav bar section -->
     <header>
         <nav>
             <img class="mobile-logo active" src="Assets/Images/logo-mobile.png" alt="">
@@ -39,7 +38,7 @@
             </div>
             <div class="profile-cart">
                 <li>
-                    <a class="profile-icon" href=""><img src="Assets/Icons/profile.png" alt=""></a>
+                    <a class="profile-icon" href="login.html"><img src="Assets/Icons/profile.png" alt=""></a>
                 </li>
                 <li>
                     <a href="cart.html"><img src="Assets/Icons/cart.png" alt=""></a>
@@ -116,111 +115,27 @@
             <a href="new-in.html">New In</a>
         </div>
     </header>
+
+    <!-- form section  -->
     <main>
-        <div class="desktop-logo-img">
-            <img class="desktop-logo" src="Assets/Images/logo-desk.png" alt="">
-        </div>
+        <img class="desktop-logo" src="Assets/Images/logo-desk.png" alt="">
         <div class="desktop-search-bar active">
             <input type="search" placeholder="Search" class="search-field" id="desktop-search-field">
             <button class="close-search">
                 <img id="desktop-menu-close" src="Assets/Icons/x-icon.png" alt="">
             </button> 
         </div>
-        <!-- order summary  -->
-        <h1>Cart Summary</h1>
-        <div class="item-count">
-            <p>Items (<span id="item-count">0</span>)</p>
-        </div>
-        <div class="orders">
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" value="1" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" value="1" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" value="1" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="order-container">
-                <img class="item-image" src="Assets/Images/img-5.png" alt="">
-                <div class="order-details">
-                    <p>SONOVO SUD96 COORD fit</p>
-                    <small>Price set: #<span>17,000</span></small>
-                    <div class="remove-and-qty">
-                        <img src="Assets/Icons/delete.png" alt="">
-                        <p>REMOVE</p>
-                        <button class="reduce-btn">-</button>
-                        <input type="text" value="1" readonly name="" id="">
-                        <button class="increase-btn">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- sub total and check out section  -->
-        <div class="subtotal-button">
-            <div class="subtotal">
-                <p>Subtotal:</p>
-                <SMall><del class="naira">N</del><span id="total">17000</span></SMall>
-            </div>
-            <a href="payment-summary.html"><button class="checkout-btn">Checkout</button></a>
-        </div>
-        
+        <h2>Contact us</h2>
+        <form action="">
+            <input class="input" type="text" placeholder="First Name" id="">
+            <input class="input" type="text" placeholder="Last Name" id="">
+            <input class="input" type="email" placeholder="Email" id="">
+            <input class="input" type="text" placeholder="Subject" id="">
+            <textarea name="" id="" placeholder="Your message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </main>
-    
-     <!-- footer section  -->
-     <footer id="footer">
-        <div class="news-letter">
-            <h3>Don't miss out on our exclusive updates.</h3>
-            <p>Email Address</p>
-            <input type="email" name="" id="">
-            <button>Sign Up</button>
-        </div>
-        <div class="links">
-            <h3>Quick Links</h3>
-            <a href="login.html">My Account</a>
-            <a href="">Shipping Policy</a>
-            <a href="">Return Policy</a>
-            <a href="">Terms of Service</a>
-        </div>
-        <a class="ig-icon" href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/instagram-icon.png" alt=""></a>
-        <a href="" target="_blank" rel="noopener noreferrer"><img src="Assets/Icons/facebook-icon.png" alt=""></a>
-    </footer>
-    
-    <script src="Scripts/cart.js"></script>
-    <!-- <script src="Scripts/select.js"></script> -->
+
+    <script src="Scripts/sign-up.js"></script>
 </body>
 </html>
