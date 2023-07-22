@@ -89,3 +89,19 @@ shippingSwitch.addEventListener("click", ()=> {
     state.classList.add("active");
     country.classList.remove("active");
 });
+
+
+// Delivery fee section 
+const residenceAddress = document.getElementById("residence-address");
+const homeCheck = document.querySelector(".home-check");
+
+homeCheck.addEventListener("click", ()=> {
+    if (homeCheck.checked) {
+        residenceAddress.classList.remove("active");
+        
+    } else {
+        residenceAddress.classList.add("active");
+    }
+
+})
+

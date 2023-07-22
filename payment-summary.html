@@ -129,8 +129,19 @@
         <!-- payment summary  -->
         <h1>Payment Summary</h1>
         <div class="item-count">
-            <p>Total Order</p>
-            <SMall><del class="naira">N</del><span id="item-price">17000</span></SMall>
+            <div>
+                <p>Total Order</p>
+                <SMall><del class="naira">N</del><span id="item-price">17000</span></SMall>
+            </div>
+            <div class="delivery-fee">
+                <p>delivery fee</p>
+                <SMall><del class="naira">N</del><span id="item-price">0</span></SMall>
+            </div>
+            <div class="total-summary">
+                <p>Total</p>
+                <SMall><del class="naira">N</del><span id="item-price">12000</span></SMall>
+            </div>
+    
         </div>
 
         
@@ -443,7 +454,14 @@
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
                 </div>
-                <input type="text" placeholder="Residence address" id="">
+                <div class="home-delivery-check">
+                    <div>
+                        <input class="home-check" type="checkbox" name="" id="">
+                        <span>Home delivery</span>
+                    </div>
+                    <span class="if-box">if box is not checked, item will be picked at the park</span>
+                </div>
+                <input class="residence active" type="text" placeholder="Residence address" id="residence-address">
                 <input type="tel" placeholder="Phone number" id="">
                 <input type="email" placeholder="Email Address" id="">
                 <button type="submit">Place Order</button>

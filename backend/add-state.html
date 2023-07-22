@@ -25,13 +25,13 @@
                 <img class="orders-img" src="Assets/Icons/orders.png" alt="">
                 <a href="orders.html"><p class="orders-p">Orders</p></a>
             </div>
-            <div class="customers active">
-                <img class="customers-img active" src="Assets/Icons/profile.png" alt="">
-                <a href="customers.html"><p class="customers-p active">Customers</p></a>
+            <div class="customers">
+                <img class="customers-img" src="Assets/Icons/profile.png" alt="">
+                <a href="customers.html"><p class="customers-p">Customers</p></a>
             </div>
-            <div class="states">
-                <img class="states-img" src="Assets/Icons/orders.png" alt="">
-                <a href="states.html"><p class="states-p">States</p></a>
+            <div class="states active">
+                <img class="states-img active" src="Assets/Icons/orders.png" alt="">
+                <a href="states.html"><p class="states-p active">States</p></a>
             </div>
             <div class="setting">
                 <img class="setting-img" src="Assets/Icons/setting.png" alt="">
@@ -55,7 +55,7 @@
 
             <!-- dashboard-section  -->
             <div class="dashboard-section">
-                <h1 id="admin-heading">CUSTOMERS</h1>
+                <h1 id="admin-heading">States</h1>
                 <div class="item-analytics-flex">
                     <div class="total-earning">
                         <div class="total-earning-text">
@@ -111,31 +111,23 @@
                     </div>
                 </div>
 
-                 <!-- ///////////CUSTOMER PAGE WHEN CLICKED////////////-->
-                <div class="customer-clicked">
+                <!-- ///////////PRODUCT PAGE  FOR ADD ITEM ////////////-->
+                <div class="add-item-product">
+                    <h2>Add State</h2>
                     <form action="">
-                        <span>Customers Name</span>
-                        <input type="text" value="Kemi Chris" id="cus-name-clicked-inp">
-                        <span>Phone Number</span>
-                        <input type="tel" value="08174086706" id="cus-tel-inp">
-                        <div class="total-amount-flex">
-                            <p>Total Amount</p>
-                            <p><del class="naira">N</del><span id="total-amount">10000</span></p>
-                        </div>
-                        <div class="total-item-bought">
-                            <p>Total Item Bought</p>
-                            <p><span>10</span> Items</p>
-                        </div>
+                        <span>State</span>
+                        <input type="text" name="" id="product-code-inp">
+                        <span>Park delivery</span>
+                        <input type="number" name="" id="quantity-inp">
+                        <span>Home delivery</span>
+                        <input type="number" name="" id="price-inp">
                     </form>
-                    
                     <div class="save-cancle">
                         <button class="save-btn">Save</button>
-                        <a href="customers.html"><button class="cancle-btn" id="cancle-customer-btn">Cancle</button></a>
+                        <a href="products.html"><button class="cancle-btn" id="cancle-product">Cancle</button></a>
                     </div>
-                    
+
                 </div>
-
-
 
                 <div class="popup-alert active" id="popup-alert">
                     <img src="Assets/Icons/alert-icon.png" alt="">
