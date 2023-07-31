@@ -15,6 +15,14 @@ const dropDownItems = document.querySelector(".drop-down-items");
 const desktopCategoryDropdown = document.querySelector(".desktop-category-dropdown");
 const desktopCategory = document.getElementById("desktop-category");
 
+const menDropdown = document.querySelector(".men-dropdown");
+const womenDropdown = document.querySelector(".women-dropdown");
+const childrenDropdown = document.querySelector(".children-dropdown");
+const men = document.querySelector(".men");
+const women = document.querySelector(".women");
+const children = document.querySelector(".children");
+
+
 // desktop category dropdown 
 desktopCategory.addEventListener("click", ()=> {  
     desktopCategoryDropdown.classList.toggle("active");
@@ -66,6 +74,23 @@ categoryCollapse.addEventListener("click", ()=> {
     categoryCollapse.classList.add("active");
     categoryDropdown.classList.remove("active");
     dropDownItems.classList.add("active");
+});
+
+// dorpdown for the gender category 
+men.addEventListener("click", ()=> {
+    menDropdown.classList.toggle("active");
+    womenDropdown.classList.add("active");
+    childrenDropdown.classList.add("active");
+});
+women.addEventListener("click", ()=> {
+    womenDropdown.classList.toggle("active");
+    menDropdown.classList.add("active");
+    childrenDropdown.classList.add("active");
+});
+children.addEventListener("click", ()=> {
+    childrenDropdown.classList.toggle("active");
+    menDropdown.classList.add("active");
+    womenDropdown.classList.add("active");
 });
 
 
